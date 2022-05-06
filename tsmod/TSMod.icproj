@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="14.0"
+	Name="TSMod"
+	ProjectGUID="{D1B5833B-79E2-4B6C-B6FB-25186F52CBB3}"
+	VCNestedProjectGUID="{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}"
+	VCNestedProjectFileName="TSMod.vcproj"
+	>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			>
+			<Tool
+				Name="CppCmplrTool"
+				InterproceduralOptimization="2"
+				OptimizeForWindowsApplication="true"
+				EnableMatrixMultiplyLibraryCall="2"
+				Parallelization="true"
+				UseIntelOptimizedHeaders="true"
+			/>
+		</Configuration>
+	</Configurations>
+	<Files/>
+</VisualStudioProject>

@@ -1,0 +1,40 @@
+Octal and Binary Number Constants (5.1.4)
+
+This simple patch adds octal and binary constants. These will be recognised in source code literals or in string contents converted implicitly or explicitly by tonumber. Binary constants take the form 0b10101. Octal constants take the form 0o176. Upper-case radix specifier is also supported for consistency with the hexadecimal format but for obvious reasons it is not recommended for octal! 
+
+For this patch to be compiled, the symbol 'JH_LUA_BINOCTAL' must be defined. 
+
+
+•Backwards compatible: unknown 
+•Lines changed/added/deleted: 0/6/0 
+•Lua authors' position: Regard it as 'bloat' - probably! 
+•Author: JohnHind 
+•Last update: 2010-January-14 
+• [Download (5.1.4)] 
+
+
+
+
+diff U5 lua-5.1.4/src/lobject.c lua-5.1.4jh/src/lobject.c
+--- lua-5.1.4/src/lobject.c	Thu Dec 27 13:02:24 2007
++++ lua-5.1.4jh/src/lobject.c	Thu Jan 14 15:34:36 2010
+@@ -91,10 +91,18 @@
+   char *endptr;
+   *result = lua_str2number(s, &endptr);
+   if (endptr == s) return 0;  /* conversion failed */
+   if (*endptr == 'x' || *endptr == 'X')  /* maybe an hexadecimal constant? */
+     *result = cast_num(strtoul(s, &endptr, 16));
++
++#if defined(JH_LUA_BINOCTAL)
++  if ((*endptr == 'o' || *endptr == 'O') && (*(endptr+1) != '\0'))
++	*result = cast_num(strtoul(endptr+1, &endptr, 8));
++  if ((*endptr == 'b' || *endptr == 'B') && (*(endptr+1) != '\0'))
++    *result = cast_num(strtoul(endptr+1, &endptr, 2));
++#endif
++
+   if (*endptr == '\0') return 1;  /* most common case */
+   while (isspace(cast(unsigned char, *endptr))) endptr++;
+   if (*endptr != '\0') return 0;  /* invalid trailing characters? */
+   return 1;
+ }
+

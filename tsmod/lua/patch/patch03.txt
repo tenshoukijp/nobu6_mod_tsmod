@@ -1,0 +1,209 @@
+Continue Statement (5.1.3)
+
+A "continue" statement is added to the parser. The virtual machine is unchanged. Comes with a small test suite. 
+
+Instead of patching Lua, one might consider luaSub, which contains a syntax mod for this same purpose. 
+
+
+•Backwards compatible: yes 
+•Lines changed/added/deleted: 2/26/- (excluding tests) 
+•Lua authors' position: ? 
+•Author: Leszek Buczkowski, Wolfgang Oertl, AskoKauppi 
+•Last update: 2008-Mar-10 
+• [Download (5.1.3)] 
+
+
+
+
+
+
+diff -ruN lua-5.1.3/src/llex.c lua-5.1.3-continue/src/llex.c
+--- lua-5.1.3/src/llex.c	2007-12-27 14:02:25.000000000 +0100
++++ lua-5.1.3-continue/src/llex.c	2008-03-10 09:20:53.851726636 +0100
+@@ -35,7 +35,7 @@
+ 
+ /* ORDER RESERVED */
+ const char *const luaX_tokens [] = {
+-    "and", "break", "do", "else", "elseif",
++    "and", "break", "continue", "do", "else", "elseif",
+     "end", "false", "for", "function", "if",
+     "in", "local", "nil", "not", "or", "repeat",
+     "return", "then", "true", "until", "while",
+diff -ruN lua-5.1.3/src/llex.h lua-5.1.3-continue/src/llex.h
+--- lua-5.1.3/src/llex.h	2007-12-27 14:02:25.000000000 +0100
++++ lua-5.1.3-continue/src/llex.h	2008-03-10 09:20:53.873989965 +0100
+@@ -23,7 +23,7 @@
+ */
+ enum RESERVED {
+   /* terminal symbols denoted by reserved words */
+-  TK_AND = FIRST_RESERVED, TK_BREAK,
++  TK_AND = FIRST_RESERVED, TK_BREAK, TK_CONTINUE,
+   TK_DO, TK_ELSE, TK_ELSEIF, TK_END, TK_FALSE, TK_FOR, TK_FUNCTION,
+   TK_IF, TK_IN, TK_LOCAL, TK_NIL, TK_NOT, TK_OR, TK_REPEAT,
+   TK_RETURN, TK_THEN, TK_TRUE, TK_UNTIL, TK_WHILE,
+diff -ruN lua-5.1.3/src/lparser.c lua-5.1.3-continue/src/lparser.c
+--- lua-5.1.3/src/lparser.c	2007-12-28 16:32:23.000000000 +0100
++++ lua-5.1.3-continue/src/lparser.c	2008-03-10 09:47:29.088721987 +0100
+@@ -40,6 +40,7 @@
+ typedef struct BlockCnt {
+   struct BlockCnt *previous;  /* chain */
+   int breaklist;  /* list of jumps out of this loop */
++  int continuelist;  /* list of jumps to the loop's test */
+   lu_byte nactvar;  /* # active locals outside the breakable structure */
+   lu_byte upval;  /* true if some variable in the block is an upvalue */
+   lu_byte isbreakable;  /* true if `block' is a loop */
+@@ -284,6 +285,7 @@
+ 
+ static void enterblock (FuncState *fs, BlockCnt *bl, lu_byte isbreakable) {
+   bl->breaklist = NO_JUMP;
++  bl->continuelist = NO_JUMP;
+   bl->isbreakable = isbreakable;
+   bl->nactvar = fs->nactvar;
+   bl->upval = 0;
+@@ -988,6 +990,23 @@
+ }
+ 
+ 
++static void continuestat (LexState *ls) {
++  FuncState *fs = ls->fs;
++  BlockCnt *bl = fs->bl;
++  int upval = 0;
++  while (bl && !bl->isbreakable) {
++    upval |= bl->upval;
++    bl = bl->previous;
++  }
++  if (!bl)
++    luaX_syntaxerror(ls, "no loop to continue");
++  if (upval)
++    luaK_codeABC(fs, OP_CLOSE, bl->nactvar, 0, 0);
++  luaK_concat(fs, &bl->continuelist, luaK_jump(fs));
++}
++
++
++
+ static void whilestat (LexState *ls, int line) {
+   /* whilestat -> WHILE cond DO block END */
+   FuncState *fs = ls->fs;
+@@ -1001,6 +1020,7 @@
+   checknext(ls, TK_DO);
+   block(ls);
+   luaK_patchlist(fs, luaK_jump(fs), whileinit);
++  luaK_patchlist(fs, bl.continuelist, whileinit);  /* continue goes to start, too */
+   check_match(ls, TK_END, TK_WHILE, line);
+   leaveblock(fs);
+   luaK_patchtohere(fs, condexit);  /* false conditions finish the loop */
+@@ -1017,6 +1037,7 @@
+   enterblock(fs, &bl2, 0);  /* scope block */
+   luaX_next(ls);  /* skip REPEAT */
+   chunk(ls);
++  luaK_patchtohere(fs, bl1.continuelist);
+   check_match(ls, TK_UNTIL, TK_REPEAT, line);
+   condexit = cond(ls);  /* read condition (inside scope block) */
+   if (!bl2.upval) {  /* no upvalues? */
+@@ -1057,6 +1078,7 @@
+   block(ls);
+   leaveblock(fs);  /* end of scope for declared variables */
+   luaK_patchtohere(fs, prep);
++  luaK_patchtohere(fs, bl.previous->continuelist);	/* continue, if any, jumps to here */
+   endfor = (isnum) ? luaK_codeAsBx(fs, OP_FORLOOP, base, NO_JUMP) :
+                      luaK_codeABC(fs, OP_TFORLOOP, base, 0, nvars);
+   luaK_fixline(fs, line);  /* pretend that `OP_FOR' starts the loop */
+@@ -1314,6 +1336,11 @@
+       breakstat(ls);
+       return 1;  /* must be last statement */
+     }
++    case TK_CONTINUE: {  /* stat -> continuestat */
++      luaX_next(ls);  /* skip CONTINUE */
++      continuestat(ls);
++      return 1;	  /* must be last statement */
++    }
+     default: {
+       exprstat(ls);
+       return 0;  /* to avoid warnings */
+diff -ruN lua-5.1.3/test/README lua-5.1.3-continue/test/README
+--- lua-5.1.3/test/README	2005-05-17 13:30:05.000000000 +0200
++++ lua-5.1.3-continue/test/README	2008-03-10 09:44:22.350767304 +0100
+@@ -6,6 +6,7 @@
+ 
+    bisect.lua		bisection method for solving non-linear equations
+    cf.lua		temperature conversion table (celsius to farenheit)
++   continue.lua         exercise the continue statement
+    echo.lua             echo command line arguments
+    env.lua              environment variables as automatic global variables
+    factorial.lua	factorial without recursion
+diff -ruN lua-5.1.3/test/continue.lua lua-5.1.3-continue/test/continue.lua
+--- lua-5.1.3/test/continue.lua	1970-01-01 01:00:00.000000000 +0100
++++ lua-5.1.3-continue/test/continue.lua	2008-03-10 09:50:13.063418991 +0100
+@@ -0,0 +1,71 @@
++-- test the continue statement
++-- vim:sw=4:sts=4
++
++-- simple
++sum = 0
++for i = 1, 10 do
++    if i == 5 then continue end
++    sum = sum + i
++end
++assert(sum == 50)
++
++-- multiple continues
++sum = 0
++for i = 1, 10 do
++    if i == 2 then continue end
++    if i == 5 then continue end
++    if i == 10 then continue end
++    sum = sum + i
++end
++assert(sum == 38)
++
++
++-- continues and breaks mixed
++sum = 0
++for i = 1, 10 do
++    if i == 1 then continue end
++    if i == 5 then continue end
++    if i == 8 then break end
++    sum = sum + i
++end
++assert(sum == 22)
++
++
++-- continue in a repeat statement
++i = 0
++sum = 0
++repeat
++    i = i + 1
++    if i == 5 then continue end
++    if i == 8 then continue end
++    if i == 10 then continue end
++    sum = sum + i
++until i == 10
++assert(sum == 55-5-8-10)
++
++
++-- continue in a while statement
++i = 0
++sum = 0
++while i < 10 do
++    i = i + 1
++    if i == 5 then continue end
++    if i == 10 then continue end
++    sum = sum + i
++end
++assert(sum == 55-5-10)
++
++
++-- nested loops
++sum = 0
++for i = 1, 10 do
++    if i == 2 then continue end
++    if i == 7 then continue end
++    for j = 1, 4 do
++	if j == 2 then continue end
++	if j == 3 then continue end
++	sum = sum + i + j
++    end
++end
++assert(sum == 132)
++
+

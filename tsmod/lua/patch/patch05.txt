@@ -1,0 +1,73 @@
+Function fields
+
+Allow the use of special syntax for function fields in tables, such that 
+tbl = {}
+function tbl:my_method(x, y) end
+
+or tbl = { my_method = function(self, x, y) end }
+
+can instead be written: tbl = { function my_method(x, y) end }
+
+That is, functions declared with this syntax get methods' automatic "self" parameter. 
+19 Jan: Fixed a bug that broke declaration of anonymous functions, e.g. t = { function(args) end }  
+
+
+•Backwards compatible: yes 
+•Lines changed/added/deleted: -/31/- 
+•Lua authors' position: ? 
+•Author: criptych 
+•Last update: 2012-Jan-19 
+• [download (for Lua 5.2.0)] 
+
+
+
+
+diff -burN lua-5.2.0/src/lparser.c lua-5.2.0-mod/src/lparser.c
+--- lua-5.2.0/src/lparser.c	2011-12-02 08:23:56 -0500
++++ lua-5.2.0-mod/src/lparser.c	2012-01-06 21:54:51 -0500
+@@ -676,6 +676,26 @@
+ }
+
+
++/* bn 01/2012: added class-like function/method constructors */
++static void body (LexState *ls, expdesc *e, int ismethod, int line);
++static void funcfield (LexState *ls, struct ConsControl *cc) {
++  /* funcfield -> function NAME funcargs */
++  FuncState *fs = ls->fs;
++  int reg = ls->fs->freereg;
++  expdesc key, val;
++  int rkkey;
++  checklimit(fs, cc->nh, MAX_INT, "items in a constructor");
++  luaX_next(ls);
++  checkname(ls, &key);
++  cc->nh++;
++  rkkey = luaK_exp2RK(fs, &key);
++  body(ls, &val, 1, ls->linenumber);
++  luaK_codeABC(fs, OP_SETTABLE, cc->t->u.info, rkkey, luaK_exp2RK(fs, &val));
++  fs->freereg = reg;  /* free registers */
++}
++/* end changes */
++
++
+ static void closelistfield (FuncState *fs, struct ConsControl *cc) {
+   if (cc->v.k == VVOID) return;  /* there is no list item */
+   luaK_exp2nextreg(fs, &cc->v);
+@@ -721,6 +741,17 @@
+         recfield(ls, cc);
+       break;
+     }
++
++    /* bn 01/2012: added class-like function/method constructors */
++    case TK_FUNCTION: {  /* funcfield */
++      if (luaX_lookahead(ls) == '(')  /* anonymous? */
++        listfield(ls, cc);
++      else
++        funcfield(ls, cc);
++      break;
++    }
++    /* end changes */
++
+     case '[': {
+       recfield(ls, cc);
+       break;
+

@@ -1,0 +1,17 @@
+#include "WinTarget.h"
+#include <time.h>
+
+
+#include "CommonGlobalHandle.h"
+#include "CurProcessMemory.h"
+#include "CurProcessGameMemory.h"
+#include "GameDataStruct.h"
+#include "EXServiceExecute.h"
+#include "FuncPlayResourceWav.h"
+
+void OnTenshouExeFireBattleAttackSuccessExecute() {
+
+	// âπÇñ¬ÇÁÇ∑ÅB	715	âŒçUÇﬂâπ 
+	FuncPlaySoundWav(715);
+}
+

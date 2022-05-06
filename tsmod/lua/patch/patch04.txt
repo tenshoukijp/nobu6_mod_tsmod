@@ -1,0 +1,52 @@
+__usedindex metamethod (5.1.1)
+
+__usedindex behaves exactly like __newindex but when the indexed key actually exists (value is overwritten). This allows simple implementation of read-only tables, mirroring C structures etc. without slow/lengthy/fragile table proxying constructs. Known to be broken with LuaJIT, fixes are welcome. 
+
+
+•Backwards compatible: yes 
+•Lines changed/added/deleted: 2/3/0 
+•Lua authors' position: 
+•Author: [Karel Tuma] (original patch by Christopher Dunn - LuaPowerPatchesArchive) 
+•Last update: 2006-Nov-14 
+• [download (for Lua 5.1.1)] 
+
+
+
+
+diff -ruN lua-5.1.1/src/ltm.c tmp/src/ltm.c
+--- lua-5.1.1/src/ltm.c	2006-01-10 13:50:00.000000000 +0100
++++ tmp/src/ltm.c	2008-04-10 19:18:10.000000000 +0200
+@@ -30,6 +30,7 @@
+ void luaT_init (lua_State *L) {
+   static const char *const luaT_eventname[] = {  /* ORDER TM */
+     "__index", "__newindex",
++    "__usedindex",
+     "__gc", "__mode", "__eq",
+     "__add", "__sub", "__mul", "__div", "__mod",
+     "__pow", "__unm", "__len", "__lt", "__le",
+diff -ruN lua-5.1.1/src/ltm.h tmp/src/ltm.h
+--- lua-5.1.1/src/ltm.h	2005-06-06 15:30:25.000000000 +0200
++++ tmp/src/ltm.h	2008-04-10 19:18:10.000000000 +0200
+@@ -18,6 +18,7 @@
+ typedef enum {
+   TM_INDEX,
+   TM_NEWINDEX,
++  TM_USEDINDEX,
+   TM_GC,
+   TM_MODE,
+   TM_EQ,  /* last tag method with `fast' access */
+diff -ruN lua-5.1.1/src/lvm.c tmp/src/lvm.c
+--- lua-5.1.1/src/lvm.c	2006-06-05 17:58:59.000000000 +0200
++++ tmp/src/lvm.c	2008-04-10 19:18:10.000000000 +0200
+@@ -140,8 +140,9 @@
+     if (ttistable(t)) {  /* `t' is a table? */
+       Table *h = hvalue(t);
+       TValue *oldval = luaH_set(L, h, key); /* do a primitive set */
+-      if (!ttisnil(oldval) ||  /* result is no nil? */
+-          (tm = fasttm(L, h->metatable, TM_NEWINDEX)) == NULL) { /* or no TM? */
++      /* oldval is nil=> look for newindex, oldval is not nil => look for usedindex */
++      if (!((ttisnil(oldval) && (tm = fasttm(L, h->metatable, TM_NEWINDEX))) ||
++         ((!ttisnil(oldval)) && (tm = fasttm(L, h->metatable, TM_USEDINDEX))))) {
+         setobj2t(L, oldval, val);
+         luaC_barriert(L, h, val);
+         return;

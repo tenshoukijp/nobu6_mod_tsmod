@@ -1,0 +1,107 @@
+Self-iterating Objects (5.2, 5.1.4)
+
+UPDATE: Following an idea sent to me by Sam Lie from Indonesia, I have extended this patch to establish pairs as the last-resort default iterator for tables. The patch is re-titled to reflect this expanded scope. 
+
+This patch adds a new event for metatables __iter. If this is included in a metatable, its value must be a function with the same signature as pairs or ipairs. It provides a default iterator for the object simplifying the generic for statement. If there is no such metamethod, the pairs iterator is used (for tables only). 
+t = {[3]="three",[2]="two",[1]="one"}
+for k,v in t do print(k,v) end        -- uses pairs
+setmetatable(t, {["__iter"]=ipairs})
+for k,v in t do print(k,v) end        -- uses ipairs
+for k,v in pairs(t) do print(k,v) end -- uses pairs (per standard Lua)
+
+Of course, a custom function or closure can be used in place of pairs or ipairs. For lists, a closure could be used to avoid the need for the key variable for example. 
+I offered this as an alternative to the __pairs and __ipairs events which have been implemented in Lua 5.2. I still believe this approach is better and continue to offer it as a patch. The two approaches can coexist, indeed you could specify all three metamethods for the same object so pairs and ipairs would both be available with customised behaviour and one of them would also be specified as the default iterator. 
+
+The patch modifies the Lua Virtual Machine to test the type of the first parameter of the TFORLOOP bytecode instruction. If it is a function, the original code is used. If it is other than a function, an attempt is made to reference its __iter metamethod. If this does not yield a function and the object being iterated is a table, an attempt is made to reference the global pairs function. If a function is obtained by either of these methods, that function is called and its three return values overwrite the original three parameters to TFORLOOP. The original code is then used to process the generic for with the iteration parameters provided by the function. Note that this introduces a subtle change in the standard Lua processing: The case of the first parameter not being a function is detected before the first iteration rather than during it, and it is a test for function type rather than for the ability to be called. This will break some subtle code tricks such as using the __call event to "fake" self-iteration. 
+
+For this patch to be compiled, the symbol 'JH_LUA_ITER' must be defined. 
+
+
+•Backwards compatible: 5.1.4 
+•Lines changed/added/deleted: 0/32/0 
+•Lua authors' position: See above. 
+•Author: JohnHind 
+•Last update: 2012-November-16 
+• [Download (5.2, 5.2.1)] 
+• [Download (5.1.4)] 
+
+
+
+
+diff U5 lua-5.1.4/src/ltm.c lua-5.1.4jh/src/ltm.c
+--- lua-5.1.4/src/ltm.c	Thu Dec 27 13:02:24 2007
++++ lua-5.1.4jh/src/ltm.c	Thu Jan 14 17:56:22 2010
+@@ -32,10 +32,13 @@
+     "__index", "__newindex",
+     "__gc", "__mode", "__eq",
+     "__add", "__sub", "__mul", "__div", "__mod",
+     "__pow", "__unm", "__len", "__lt", "__le",
+     "__concat", "__call"
++#if defined(JH_LUA_ITER)
++	, "__iter"
++#endif
+   };
+   int i;
+   for (i=0; i<TM_N; i++) {
+     G(L)->tmname[i] = luaS_new(L, luaT_eventname[i]);
+     luaS_fix(G(L)->tmname[i]);  /* never collect these names */
+
+diff U5 lua-5.1.4/src/ltm.h lua-5.1.4jh/src/ltm.h
+--- lua-5.1.4/src/ltm.h	Thu Dec 27 13:02:24 2007
++++ lua-5.1.4jh/src/ltm.h	Thu Jan 14 17:59:21 2010
+@@ -31,10 +31,13 @@
+   TM_LEN,
+   TM_LT,
+   TM_LE,
+   TM_CONCAT,
+   TM_CALL,
++#if defined(JH_LUA_ITER)
++  TM_ITER,
++#endif
+   TM_N		/* number of elements in the enum */
+ } TMS;
+
+diff U5 lua-5.1.4/src/lvm.c lua-5.1.4jh/src/lvm.c
+--- lua-5.1.4/src/lvm.c	Fri Dec 28 15:32:22 2007
++++ lua-5.1.4jh/src/lvm.c	Thu Jan 14 17:58:15 2010
+@@ -674,11 +674,31 @@
+         dojump(L, pc, GETARG_sBx(i));
+         continue;
+       }
+       case OP_TFORLOOP: {
+         StkId cb = ra + 3;  /* call base */
++
++#if defined(JH_LUA_ITER)
++		if (!ttisfunction(ra))
++		{
++			const TValue *tm = luaT_gettmbyobj(L, ra, TM_ITER);
++     if (ttisfunction(tm))
++     {
++			  setobjs2s(L, cb, tm);
++     }
++     else
++     {
++       L->top = cb;
++       lua_getglobal(L, "pairs");
++			  if (!ttisfunction(cb)) luaG_typeerror(L, ra, "iterate");
++     }
++     setobjs2s(L, cb+1, ra);
++			L->top = cb + 2;			// tag func + the object parameter.
++			Protect(luaD_call(L, cb, 3));
++			L->top = L->ci->top;
++			ra = RA(i);					//
++			cb = ra + 3;				// previous call may change the stack
++			setobj2s(L, ra+2, cb+2);	//
++			setobj2s(L, ra+1, cb+1);	//
++			setobj2s(L, ra, cb);		// replace parameters with return from tag method
++			L->top = ra + 3;
++		}
++#endif
++
+		 setobjs2s(L, cb+2, ra+2);
+         setobjs2s(L, cb+1, ra+1);
+         setobjs2s(L, cb, ra);
+         L->top = cb+3;  /* func. + 2 args (state and index) */
+         Protect(luaD_call(L, cb, GETARG_C(i)));
+         L->top = L->ci->top;
+

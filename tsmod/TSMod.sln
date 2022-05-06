@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TSMod", "TSMod.vcxproj", "{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oniguruma", "oniguruma.vcxproj", "{14927257-A3E0-40FE-8F36-BDD6743EA382}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		SemiDebug|Win32 = SemiDebug|Win32
+		SemiRelease|Win32 = SemiRelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.Debug|Win32.Build.0 = Debug|Win32
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.Release|Win32.ActiveCfg = Release|Win32
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.Release|Win32.Build.0 = Release|Win32
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.SemiDebug|Win32.ActiveCfg = SemiDebug|Win32
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.SemiDebug|Win32.Build.0 = SemiDebug|Win32
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.SemiRelease|Win32.ActiveCfg = SemiRelease|Win32
+		{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}.SemiRelease|Win32.Build.0 = SemiRelease|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.Debug|Win32.ActiveCfg = Debug|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.Debug|Win32.Build.0 = Debug|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.Release|Win32.ActiveCfg = Release|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.Release|Win32.Build.0 = Release|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.SemiDebug|Win32.ActiveCfg = Debug|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.SemiDebug|Win32.Build.0 = Debug|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.SemiRelease|Win32.ActiveCfg = Release|Win32
+		{14927257-A3E0-40FE-8F36-BDD6743EA382}.SemiRelease|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

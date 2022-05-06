@@ -1,0 +1,2666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="05.ソース">
+      <UniqueIdentifier>{e73f246a-6202-4a0b-a6c5-44f418140785}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="05.ソース\21.メッセージ">
+      <UniqueIdentifier>{db0734e7-ef68-475b-82a8-702b7e3859b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス">
+      <UniqueIdentifier>{c768b687-0a66-47ad-b734-64f82b8ca28a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\01.寿命">
+      <UniqueIdentifier>{a5d78869-cb07-4e5e-8511-9b3f6e485009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\03.町発展">
+      <UniqueIdentifier>{516920c4-a44d-439a-b95e-1f9f66cec2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\05.忠誠変化">
+      <UniqueIdentifier>{be74500a-b2c9-44f5-9d26-f6ddb525a6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\08.資産変化">
+      <UniqueIdentifier>{ae4e1086-cbba-40c3-ab48-d00f9e4e7e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\10.勲功 or 出世">
+      <UniqueIdentifier>{3c946ce1-5f3f-44b9-889e-9d8fb2fe5160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\12.技能">
+      <UniqueIdentifier>{59967037-72cc-433b-80fa-71aee9dedf67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\14.パラメタIF">
+      <UniqueIdentifier>{1cda528c-06ab-4d9c-90d1-ed14f15786b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\16.兵数【カスタム含】">
+      <UniqueIdentifier>{7250a338-b672-4d0c-bff1-7956fcaf74eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\80.バグパッチ【軍団役職】">
+      <UniqueIdentifier>{1045c3fa-3589-41ed-995a-b7111995379b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\30.ターン等、切り替わり節目">
+      <UniqueIdentifier>{2f787019-00af-4c5e-956b-a9f965e41b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\20.能力変化">
+      <UniqueIdentifier>{0ae6995f-8c01-4ac7-8c16-3a576ec93140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\31.季節霧変わり目イベント">
+      <UniqueIdentifier>{30113ac1-d97d-4213-93da-30f74b31edd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\07.熟練度">
+      <UniqueIdentifier>{60de734a-2142-483b-bcdf-4f005b64f578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\07.熟練度\最大化">
+      <UniqueIdentifier>{b0d314cc-754f-4125-a6dd-7f960ef2d58e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\07.熟練度\自動鍛錬">
+      <UniqueIdentifier>{e1bd506e-edfb-44f4-a4ed-fbf84119e441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\07.熟練度\戦時熟練度上昇逓減">
+      <UniqueIdentifier>{607722e6-a254-4097-961c-8e1baef1a1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\03.駆動系サービス\21.浪人勲功">
+      <UniqueIdentifier>{f8f2356f-2964-4a74-8d34-18e67be81cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\04.特殊武将">
+      <UniqueIdentifier>{14d32533-7d38-4359-9fd9-50c191cefac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\09.On系駆動【ゲーム全体系】">
+      <UniqueIdentifier>{fed9040e-19b0-4531-9d57-b7b2838191d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\01.ゲームデータ管理系">
+      <UniqueIdentifier>{c655e5cf-7a10-426f-9b83-c401180b1e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数">
+      <UniqueIdentifier>{d4a9b214-b87d-4feb-a720-7a9ea1f506d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数\演出系">
+      <UniqueIdentifier>{ef7b9680-b901-4d52-86a0-46a4d0e00a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数\選択リスト系">
+      <UniqueIdentifier>{4e7913f6-7728-4c03-bb42-db929ad246db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数\ダイアログ系">
+      <UniqueIdentifier>{b69387b6-1a3d-402c-81d5-c39080b5a3fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数\マルチメディア系">
+      <UniqueIdentifier>{c9fdf0eb-f2c2-4bfa-bece-9b83ac2c88c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数\描画更新系">
+      <UniqueIdentifier>{d05c2668-fd0d-469c-957f-0e3f1efcb539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数\死亡・退却系">
+      <UniqueIdentifier>{dd555240-b921-438f-a54a-3fdd5885e50f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\40.TENSHOUラッパー関数\天気系">
+      <UniqueIdentifier>{ae06a2ad-92d7-43b2-b158-42e4fa218e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\16.家宝">
+      <UniqueIdentifier>{ce913b96-7cb4-4449-9a12-e3858b58e378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\16.家宝\01.家宝列伝">
+      <UniqueIdentifier>{2f631e20-d7b7-4e8c-864f-0dc1b40f8d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\16.家宝\02.家宝アイコン">
+      <UniqueIdentifier>{8a1dd8d2-e65e-4f1d-9cba-26e63e386eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\16.家宝\03.カスタム家宝種類">
+      <UniqueIdentifier>{4f23e563-be36-4304-807a-b31847598f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\99.カーネルフック関数">
+      <UniqueIdentifier>{629c5ec5-559d-4f92-a2dc-0f859e56a730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\50.KAOSWAP">
+      <UniqueIdentifier>{340b6db2-c8dc-4b0c-96a5-f2624ef94ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\11.On系駆動【パラメタ読み込み】">
+      <UniqueIdentifier>{266c34e9-5b21-43f4-8884-6a2f71ceaf10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】">
+      <UniqueIdentifier>{febf3823-68eb-48a2-85d4-8fb49ee9b6d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\08.暗殺">
+      <UniqueIdentifier>{6bbd8f7d-f9a6-498d-9efa-622bed75cda3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\02.煽動">
+      <UniqueIdentifier>{5f9b26d8-0963-4b70-8443-e373ff4cce9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\17.落城">
+      <UniqueIdentifier>{1a6a7d00-f5c7-45fd-bd3f-31d6d35902f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\50.ユニット形態">
+      <UniqueIdentifier>{8eaaf2fb-d800-45cf-ade5-13ffbc0698ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\05.被ダメージ">
+      <UniqueIdentifier>{fe2a94c7-4c29-4eeb-8029-db0d10fc6820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\06.門壊 and 城壊">
+      <UniqueIdentifier>{785b283e-3987-4dbd-b5fe-d76dbd79ed2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\60.ターン変化">
+      <UniqueIdentifier>{e4dd0ce1-46da-4576-8c16-303a37a86627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\10.２回行動">
+      <UniqueIdentifier>{a8654937-9575-4e91-82c5-43d2c17c4286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\19.火攻め">
+      <UniqueIdentifier>{4339f308-42c1-404c-a21d-f5ab25a0d56a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\00.コマンド表示">
+      <UniqueIdentifier>{6c96a35e-0f14-46fe-9628-c7a350e937d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\32.大砲 or 鉄甲船砲攻撃回数">
+      <UniqueIdentifier>{e55bb3d8-f9a5-49b4-9804-7dd1ddc09ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\15.徴兵">
+      <UniqueIdentifier>{af5c6e31-7872-4bf0-9c73-64d1d29f890e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\30.雨判定">
+      <UniqueIdentifier>{f529f2d3-792f-4f78-a023-fcd488cdd12b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\01.コマンド実行">
+      <UniqueIdentifier>{23fab7f7-3b0d-468c-951d-9d5e389acfaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\25.退却">
+      <UniqueIdentifier>{4c1182b7-17ef-468a-97e8-3ed5f96ecf7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\09.突撃">
+      <UniqueIdentifier>{dc459b91-dc2d-49fd-9c19-07f07c100855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\24.出陣">
+      <UniqueIdentifier>{c003dbf8-a82a-4753-8103-6e68fe6fa5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\27.生け捕り">
+      <UniqueIdentifier>{2954654a-ccf0-445c-a8c3-8f45083dc510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\70.戦死">
+      <UniqueIdentifier>{630faca6-4d37-4307-988d-6f218f90ce07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\29.鉄砲射撃判定">
+      <UniqueIdentifier>{2dc235be-c509-4c95-a1d6-3958f6abe1ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\30.鉄砲発射">
+      <UniqueIdentifier>{5cf9fac1-e022-4fb0-bfc5-b0675033f638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\28.攻撃可能距離判定">
+      <UniqueIdentifier>{9e8eda05-0b96-4066-98f0-0fe257c06958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\31.大砲所持判定">
+      <UniqueIdentifier>{5fff0040-73ca-416f-9105-a5128687ff01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\11.移動">
+      <UniqueIdentifier>{c6460b08-c3dc-4d8c-b5b8-a43bebd3b552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\13.籠城">
+      <UniqueIdentifier>{4b228dc5-8a37-4d31-80b0-a2be1f819e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\55.行動済み化">
+      <UniqueIdentifier>{e627c63a-d26f-44e5-9cdb-a8a82e54dd9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\80.勢力">
+      <UniqueIdentifier>{332edad4-087e-49ff-be79-7dfcec599bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\03.内応">
+      <UniqueIdentifier>{0dd7e7f8-8479-4b80-a425-6932578311bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\12.On系駆動【戦争】\07.一斉攻撃">
+      <UniqueIdentifier>{333456e0-cd4c-4d2d-b67e-fb0e4fe2c43a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\13.On系駆動【戦争開始～終了】">
+      <UniqueIdentifier>{f09c3db8-460d-42e7-963b-c6c770a0743a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\13.On系駆動【戦争開始～終了】\戦後処遇">
+      <UniqueIdentifier>{e7e4d295-e785-4bac-9c01-2f203a6dfee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\13.On系駆動【戦争開始～終了】\戦闘開始～終了">
+      <UniqueIdentifier>{addffdb6-8813-4215-95f0-4dbb3671a63f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】">
+      <UniqueIdentifier>{7dec6056-01b0-43c5-9a31-e932a197274b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\05.商業">
+      <UniqueIdentifier>{33a7af1f-b471-46d9-913b-648ba8584b49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\08.老齢">
+      <UniqueIdentifier>{7436c68b-1778-4c8a-b8c2-01de7aca8a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\06.朝廷工作">
+      <UniqueIdentifier>{5e7ee9a4-1544-4407-82a3-529dd791b577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\11.披露">
+      <UniqueIdentifier>{91b23c14-185b-46bf-aced-ad630e47eb57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\30.ターン等、切り替わり節目">
+      <UniqueIdentifier>{0f9f82de-06ae-4200-875d-bfdbae5fe50e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\25.征夷大将軍">
+      <UniqueIdentifier>{657afd93-a2cd-4629-a058-ed3398727c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\80.エンディング">
+      <UniqueIdentifier>{5a47901d-1d00-4187-a514-af4ba9dcdbf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\15.鉄砲イベント">
+      <UniqueIdentifier>{0301d449-2a27-43df-9b26-55f8ed92bc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\12.軍議">
+      <UniqueIdentifier>{611b491f-9345-4818-b3ae-1e21eee62774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\26.武将暗殺">
+      <UniqueIdentifier>{dee9312e-cd68-42b1-b659-7de881c9a497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\09.死亡頻度・寿命">
+      <UniqueIdentifier>{d41982f6-998b-4f3b-bc95-33bc6c692e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\40.他軍団指示">
+      <UniqueIdentifier>{86a0a741-45eb-4357-8726-253fc95cfd67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\60.徴兵可能数増加割合">
+      <UniqueIdentifier>{50ca38e7-db26-4be6-9622-13b84acc3542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\14.脅迫">
+      <UniqueIdentifier>{60dbb06b-107b-4234-a178-44ca3a2ffaef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\27.武将忠誠度">
+      <UniqueIdentifier>{50205904-2cce-423b-a874-58deabb39bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\28.旗揚げ">
+      <UniqueIdentifier>{572019ac-87c2-4930-957e-b2dfb608870f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\02.サブコマンド">
+      <UniqueIdentifier>{f3077319-5eb3-4064-b388-4b8fbde15718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\35.会見">
+      <UniqueIdentifier>{8261bdd3-66f5-45cb-99a9-b0a2e497b0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\50.勲功">
+      <UniqueIdentifier>{8f5cac91-2c33-4cc9-92c7-88e9bfd3ff92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\70.西暦表示">
+      <UniqueIdentifier>{36592c69-ff10-4746-939c-ed06de03a4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\01.メインコマンド侵入・脱出">
+      <UniqueIdentifier>{c991802d-d4fe-4655-9a62-75970a3b0000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\32.UIローディング">
+      <UniqueIdentifier>{a1674149-c34c-4a74-95f0-e729a4570c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\36.身分">
+      <UniqueIdentifier>{05373477-23e6-405c-8c45-0a973ae424f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\37.状態">
+      <UniqueIdentifier>{479df4f1-aa94-491a-ae9e-9865faad6330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\13.内応">
+      <UniqueIdentifier>{f8b993f4-c187-413f-89cd-b76231b7ce64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\18.部隊名">
+      <UniqueIdentifier>{4fd57009-f9df-482c-aa2a-1b14289f612f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\34.ムービー">
+      <UniqueIdentifier>{fcf2bb7b-9ed7-4dd2-a92d-1b83a639b5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\02.TSMod.ini">
+      <UniqueIdentifier>{6b12425f-b1a4-48d0-8e9b-f60bcfd10f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\62.シナリオ">
+      <UniqueIdentifier>{1a70937b-1509-4189-81c8-8f2b1a650316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\00.エントリー">
+      <UniqueIdentifier>{6a8fe1a3-272a-4da0-8f97-ea9988e78db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\S0.文字列書式子">
+      <UniqueIdentifier>{b458d1e2-2199-45c0-a27f-93aa5cda59c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\55.BFileN6p">
+      <UniqueIdentifier>{2e5e97a0-050b-489d-92dd-8952132705e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\L0.LS11ライブラリ">
+      <UniqueIdentifier>{8afe7f88-540d-450f-9e7b-0b75b34b08fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\05.MapDataN6P">
+      <UniqueIdentifier>{711eda44-89c3-45d9-b77f-d3f1eec2c138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\D0.デバッグウィンドウ">
+      <UniqueIdentifier>{6888e2f9-d160-40c5-b5a7-5f30988b7841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\R0.正規表現ライブラリ">
+      <UniqueIdentifier>{f2a7e1c7-4f81-4313-ad4c-f3434d54640d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\R0.正規表現ライブラリ\02.鬼車インターフェイス">
+      <UniqueIdentifier>{a1c579b4-b366-47c3-be09-570211351118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\R0.正規表現ライブラリ\01.鬼車">
+      <UniqueIdentifier>{3b4ace23-675f-4dfa-9063-653299695f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\S5.CP932⇔UTF8変換">
+      <UniqueIdentifier>{0d9f8af8-e950-401e-8b2c-b8a72486e899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\B0.ビットマップ系">
+      <UniqueIdentifier>{5f348f19-f724-40e8-9a91-af3d51c5ac57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\V0.メイン引数">
+      <UniqueIdentifier>{659e2a1a-0655-4bf7-bb15-39ad930edbb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\C7.クリップボード">
+      <UniqueIdentifier>{fc7e1dff-55a4-4d82-b4ce-fe78b73781d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\M0.メッセージボックス">
+      <UniqueIdentifier>{e5c226db-6c66-4566-a57c-645661b2939a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\70.フォント">
+      <UniqueIdentifier>{c5df7570-8361-42e8-ab03-a4363379b513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\M1.メニュー">
+      <UniqueIdentifier>{ab530611-16f3-429f-9239-1ba810f3b76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\K0.神パッチ">
+      <UniqueIdentifier>{cbad609e-5e7a-4c66-bac0-728def683b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\J0.JSON">
+      <UniqueIdentifier>{7d21cc59-9709-4ae9-bec2-4312b090fa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ">
+      <UniqueIdentifier>{23bd4466-af48-4d08-85e1-9ecc6cb22dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\xaudioのクラス例">
+      <UniqueIdentifier>{1dba7449-4269-452b-964e-7fc4381e527b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\X3DAudio">
+      <UniqueIdentifier>{04cff00e-a03f-4418-b134-e4296019435e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\IOSoundMap">
+      <UniqueIdentifier>{09fd5419-d649-48cb-9c8a-c143239fcc69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\INMM">
+      <UniqueIdentifier>{93943f1a-71f3-4d76-824b-5f44262812c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\BGM曲数">
+      <UniqueIdentifier>{b4e288ee-43d5-4679-ae18-88cae3e1a8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\BGM切替時">
+      <UniqueIdentifier>{aa14de71-44e4-40c8-8a2e-b50f61f8fec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\BGMmm">
+      <UniqueIdentifier>{fe0fdaa4-dbe1-4cea-81a9-6e30e38e8617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\A0.オーディオ\音楽トラックCD">
+      <UniqueIdentifier>{a568d683-c9f3-43dd-83a3-62b34feb67b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\D0.アンチデバッグ">
+      <UniqueIdentifier>{03f2629f-1750-4e08-9760-d82af4add829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\T0.タイムスタンプ">
+      <UniqueIdentifier>{1f45a440-f50b-44c3-9950-50001d3b9531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\S6.半角⇔全角変換">
+      <UniqueIdentifier>{bbfd9a19-b9db-433c-85ec-a010c3c4abea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\O0.OS判定">
+      <UniqueIdentifier>{521c3b0d-a574-4717-8ce8-8248e8dbe861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\35.解像度">
+      <UniqueIdentifier>{4d3378ec-3e2e-4754-9b7d-d1f6edb112e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\58.武将名バリエーション判定">
+      <UniqueIdentifier>{3f9e0fa8-8efe-48e1-ad43-93d09da9d175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\59.歴代平均データ">
+      <UniqueIdentifier>{9bb94a9f-68a8-402f-b5c5-5e63347b5326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\60.待機武将">
+      <UniqueIdentifier>{8650cae0-260a-4a2a-8388-ad90de547e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\M3.数学・幾何学">
+      <UniqueIdentifier>{b2068949-31e8-48f2-aa42-e910b41c8506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\19.武将詳細画面">
+      <UniqueIdentifier>{e99be873-6cc6-4d8d-8c31-dfe30a273dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\19.武将詳細画面\特殊部隊">
+      <UniqueIdentifier>{6c92e5c7-20a1-494b-b3cc-d5bc50325a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\19.武将詳細画面\職業">
+      <UniqueIdentifier>{5a1befd1-d850-4543-af00-7de76bb3865f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\19.武将詳細画面\部隊名">
+      <UniqueIdentifier>{d20a3c13-3a3a-42f1-ab7e-8bada44c272e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\19.武将詳細画面\武将列伝">
+      <UniqueIdentifier>{208da1c6-3761-4669-8fdc-833f988fcbee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\X0.XML">
+      <UniqueIdentifier>{aa24fd52-222e-4e69-aea9-0b70465afcf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\N0.ディスクレス">
+      <UniqueIdentifier>{a04c445d-b560-4420-bb0f-5b4a7d8fcc13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\P0.プロセス判定">
+      <UniqueIdentifier>{17b9b8a4-96a7-4d09-94fc-a1c4444fe610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\32.行動力">
+      <UniqueIdentifier>{4aa69f2b-35ed-48c5-a479-cd372fa4c611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\90.ヘルプファイル">
+      <UniqueIdentifier>{10ecb511-9302-4deb-be67-e498e0f9077e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\S3.スペシャルフォルダー">
+      <UniqueIdentifier>{17be7f20-7c94-4ab4-ad3d-fbca65e06a63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\80.委任解除">
+      <UniqueIdentifier>{9cdefbfe-13d4-4eab-9669-6381d196f065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\25.部隊編成">
+      <UniqueIdentifier>{3088a2da-cf71-42d6-91f1-91c030971f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\28.武将選択・武将一覧・姫選択">
+      <UniqueIdentifier>{58bcd6a9-fa17-4a28-add0-a25abfff8828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\28.武将選択・武将一覧・姫選択\特殊部隊">
+      <UniqueIdentifier>{3cd6e384-a0b2-4254-b13b-afe1982a6e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\29.姫判定">
+      <UniqueIdentifier>{8e59ab11-23bb-446f-9752-3a2c841a060d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\20.姫詳細画面">
+      <UniqueIdentifier>{6a12bccb-e954-4009-ae6e-dfbd0ea169b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\06.セーブデータ">
+      <UniqueIdentifier>{2636fc36-93a2-4750-8dbf-a5dfc06bd562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\D1.DDrawフック">
+      <UniqueIdentifier>{04d98a50-b481-428c-bdbc-f5219e54f53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\17.家紋">
+      <UniqueIdentifier>{3aa31101-3a38-46c1-9b3a-654de27c334b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\W0.Wait処理">
+      <UniqueIdentifier>{319422b4-b714-4f4f-9dc5-ded29bb3ac35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\27.軍師判定">
+      <UniqueIdentifier>{952dcdff-1943-4ffd-b4fa-4b58f075ef7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\S1.数値→漢数字">
+      <UniqueIdentifier>{b44a4a3b-0b23-4e7b-89e8-bd822fafaa08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\80.都道府県">
+      <UniqueIdentifier>{f55e5330-b659-4b25-a870-b94b3f9f47cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\52.汎用顔グラ">
+      <UniqueIdentifier>{bb140802-6055-4548-85e5-9072d0123194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\57.汎用名">
+      <UniqueIdentifier>{79fff216-b82d-4e00-a1c6-213322eaca7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\61.汎用武将誕生">
+      <UniqueIdentifier>{b9da8a4b-bf3b-4b1d-bd59-3bf5bdaa86d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\64.Hexmap">
+      <UniqueIdentifier>{c04d451a-fd8d-4fab-a93a-df50a49d8fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\63.Hex当たり判定">
+      <UniqueIdentifier>{4b3e8abf-a78c-43ff-846f-a7d01d76d848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\30.大名後継者判定">
+      <UniqueIdentifier>{303a1539-7567-438f-b126-f8d98d9a6707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\L1.Luaインタプリタ">
+      <UniqueIdentifier>{150897b1-2442-4871-a568-673aa2957abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\L1.Luaインタプリタ\インタプリタ本体">
+      <UniqueIdentifier>{c1198bc0-789d-4eb3-b78f-b196fed4c585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\L1.Luaインタプリタ\インタプリタIF">
+      <UniqueIdentifier>{b8886c2f-a3f9-4efa-aac3-bbcbac4bfa61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\07.プラグイン">
+      <UniqueIdentifier>{a957c96f-01c8-4514-a0f8-ddccbd761632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\S4.ファイル名">
+      <UniqueIdentifier>{a3b683d1-56d5-44b8-8c13-98c1a99135ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\23.数値入力ダイアログ">
+      <UniqueIdentifier>{50ae6612-a650-4df3-95e7-d32a7630ef18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\24.追認系ダイアログ確認時">
+      <UniqueIdentifier>{5faf29cc-4db5-443a-b415-66d7e1cb763a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\C9.コントロールパネル">
+      <UniqueIdentifier>{4945cf42-49fc-42a9-9e8d-0efa7f959219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\D2.ディスクスペース">
+      <UniqueIdentifier>{87a63128-0f3d-414c-b8d0-c029e728aa52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\S2.日本語文字コード判別">
+      <UniqueIdentifier>{9b453cdb-1eff-488c-a4de-cfd6a35b1041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\65.城連結">
+      <UniqueIdentifier>{b5a36c86-5882-4096-8d5f-c0b6ad860a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\C2.Anyコンテナ">
+      <UniqueIdentifier>{c4e1d178-922c-4de7-841d-8e87a4a93be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\51.顔グラアクセス">
+      <UniqueIdentifier>{356ce857-6737-42fb-a5ac-b2776f90debe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\15.城列伝">
+      <UniqueIdentifier>{b518da68-21a3-41c9-b2ec-0fbd3a0016bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\M2.マウス">
+      <UniqueIdentifier>{276330f1-12eb-4190-96ea-e89cddef54f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\L1.KoeiLWライブラリ">
+      <UniqueIdentifier>{8ba0b5e3-b2cb-429a-ac50-5e3a9a51a7be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\31.内政実行者等表示枠">
+      <UniqueIdentifier>{222a1fea-d0e8-473d-b4f2-f06429ef1fbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー">
+      <UniqueIdentifier>{19ac4d26-6705-405f-99e6-23e02d413a4d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="03.ヘッダー\01.ゲームデータ管理系">
+      <UniqueIdentifier>{1241b90c-6e5b-4093-9568-2e6ccfb16603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\16.家宝">
+      <UniqueIdentifier>{94c5e435-f6df-4a28-992f-cb6f93ae25b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\16.家宝\02.家宝アイコン">
+      <UniqueIdentifier>{1b69460f-7e6a-452c-9fa7-b7a6c32be728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\16.家宝\01.家宝列伝">
+      <UniqueIdentifier>{0be4e65e-2e99-4206-b87e-bb3ccadfb2a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\16.家宝\03.家宝種類">
+      <UniqueIdentifier>{809ffb38-d68d-4674-a682-85c5f854a6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\03.駆動系サービス">
+      <UniqueIdentifier>{227a2e85-8e34-4468-9c12-1269cb821c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\04.特殊武将">
+      <UniqueIdentifier>{cc583f77-016b-4542-951a-ef1416a04313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数">
+      <UniqueIdentifier>{369254ed-9be2-49d0-a745-982f044be2d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系">
+      <UniqueIdentifier>{9563aa7c-3f97-4798-a083-4647a925ab4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\画像系">
+      <UniqueIdentifier>{978f9349-ef71-4611-b6cb-912f7b82f10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\演出系系">
+      <UniqueIdentifier>{be39a56c-f020-4243-8dde-4a5698cf4e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\マルチメディア系">
+      <UniqueIdentifier>{b6f4e7d2-5ad5-4e12-a1f0-4f3f04ef5ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\描画更新系">
+      <UniqueIdentifier>{c474f92e-a5d2-406e-9ef9-721eb92cbc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\ダイアログ系">
+      <UniqueIdentifier>{d49cf618-0dc4-4da6-907f-42ece5e04ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\死亡・逃亡系鵜">
+      <UniqueIdentifier>{eae7506e-c3bb-4809-826e-f86c19b8a8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\天気系">
+      <UniqueIdentifier>{fa94b368-14fa-4d43-be29-f0873ae3d17f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\40.TENSHOUラッパー関数\輸送">
+      <UniqueIdentifier>{5926a0cd-08fa-4720-9338-04457219f1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\99.カーネルフック関数">
+      <UniqueIdentifier>{4553fb31-8b65-4a56-8ea6-319463c0f0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\50.KAOSWAP">
+      <UniqueIdentifier>{93b39789-2982-4408-96b6-74ffa17dc171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\21.メッセージ">
+      <UniqueIdentifier>{004e4811-ae95-4608-8103-332829706472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\12.On系駆動【戦争】">
+      <UniqueIdentifier>{d8ae8534-8057-4b3f-a4e4-f61d3335af00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\00.エントリー">
+      <UniqueIdentifier>{10816da3-50e4-4138-980f-5124174c3d67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\02.TSMod.ini">
+      <UniqueIdentifier>{78e2ecb8-3c29-452d-8dd9-4a883b5557a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\62.シナリオ">
+      <UniqueIdentifier>{527b88fb-0bb2-45ca-b9bc-39ccc404f793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\55.BFileN6P">
+      <UniqueIdentifier>{4d678032-2b2c-4144-82dd-34910c889634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\L0.LS11ライブラリ">
+      <UniqueIdentifier>{018f1b7d-6523-496f-a860-8d5d7022fea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\45.MapDataN6P">
+      <UniqueIdentifier>{b0729745-7f27-4bd4-ab52-55d4d1c4df3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\D0.デバッグ">
+      <UniqueIdentifier>{ce0da896-28d4-4b75-a33f-540a160f531c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\R0.正規表現ライブラリ">
+      <UniqueIdentifier>{a56c6aec-aa79-4479-bcd3-94e208915e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\R0.正規表現ライブラリ\02.鬼車インターフェイス">
+      <UniqueIdentifier>{2dfc510f-7903-4e24-85db-fc73bea24a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\R0.正規表現ライブラリ\01.鬼車">
+      <UniqueIdentifier>{8f5f2a7f-f2aa-4126-a901-72dc686977c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\C0.CP932⇔UTF8変換">
+      <UniqueIdentifier>{e4a9365c-0683-4642-95a6-dd4ddffb41aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\S0.文字列書式子">
+      <UniqueIdentifier>{dc5e61fa-de24-4bb4-9c9c-383641378f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\B0.ビットマップ系">
+      <UniqueIdentifier>{e43c0aad-b5d6-4c08-8972-42f4ee06d98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\V0.メイン引数">
+      <UniqueIdentifier>{7cb61792-1692-4711-8441-96f0deee53f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\C7.クリップボード">
+      <UniqueIdentifier>{adb13ba0-f875-4420-a368-be5fbc163e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\M0.メッセージボックス">
+      <UniqueIdentifier>{2a49359c-ac44-4262-bd73-48c132347d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\70.フォント">
+      <UniqueIdentifier>{c8784756-f199-4289-861e-f58e52452143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\M1.メニュー">
+      <UniqueIdentifier>{290427bc-eaaa-4b7e-a490-3862e375572a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\K0.神パッチ">
+      <UniqueIdentifier>{1e04b966-ee91-4f95-b1cd-dda55d800ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\J0.JSON">
+      <UniqueIdentifier>{4ac7ceb6-6995-4e9e-8f6d-3268526fdf94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\A0.オーディオ">
+      <UniqueIdentifier>{84d8f7ea-2dc1-4949-b8fc-4fb6f40d6af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\A0.オーディオ\xaudio2のクラス例">
+      <UniqueIdentifier>{f2feee51-7fef-4ec3-9626-8ca67a8b81fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\A0.オーディオ\X3DAudio">
+      <UniqueIdentifier>{6227803a-5a02-4d4d-8d28-ff4ea580c5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\A0.オーディオ\IOSoundMap">
+      <UniqueIdentifier>{17ca8790-89d1-48d7-911f-86e23904a743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\A0.オーディオ\INMM">
+      <UniqueIdentifier>{494f85b6-b7ed-47ee-9034-4ef0bbd2000a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\D0.アンチデバッグ">
+      <UniqueIdentifier>{8790663c-de00-44f4-82c6-523b3da33b94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\T0.タイムスタンプ">
+      <UniqueIdentifier>{3dc0c812-c6d5-48b5-bc25-e4df2eb82600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\S6.全角⇔半角変換">
+      <UniqueIdentifier>{152265e2-dccb-4fe1-9207-69c617bd5c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\23.武将ファイル">
+      <UniqueIdentifier>{21dfb650-38c9-474a-b822-df280d3ca897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\O0.OS判定">
+      <UniqueIdentifier>{cbdbf519-dec5-4a51-9449-54c553a78d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\34.ムービー">
+      <UniqueIdentifier>{88b140e3-9b70-448a-a143-31fe8c301fe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\35.解像度">
+      <UniqueIdentifier>{a340f15f-59b2-4928-a84e-ed7d0a1e5585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\58.武将名バリエーション判定">
+      <UniqueIdentifier>{c7473327-7483-48bd-92f3-30f9faa9ed53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\59.歴代平均データ">
+      <UniqueIdentifier>{c9247e90-55a1-4359-ac39-881840556d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\M3.数学・幾何学">
+      <UniqueIdentifier>{878c9b3a-690b-4a4f-8ce8-cd0e002dc8d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\18.部隊名">
+      <UniqueIdentifier>{a675d505-e882-46a7-9334-86fd637b0c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\X0.XML">
+      <UniqueIdentifier>{a14a64dd-f7fe-4e99-a7b5-8393fa3a7b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\P0.プロセス判定">
+      <UniqueIdentifier>{221cb79c-bb1b-4583-b281-7cb32cae9ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\N0.ディスクレス">
+      <UniqueIdentifier>{d1c4f401-346c-4e32-a67b-bc5aa9499271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\S7.マルチ⇔ワイド変換">
+      <UniqueIdentifier>{e04bc611-d4a1-4dd5-955c-996a83892f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\32.行動力">
+      <UniqueIdentifier>{5229e2c4-9d69-4c35-849c-0de3d44b2ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\90.ヘルプファイル">
+      <UniqueIdentifier>{4fe066dc-81d1-4e28-9686-fb5b786dc5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\W0.Wait処理">
+      <UniqueIdentifier>{58e9b0fd-b186-4413-927c-a702e8ce4d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\27.軍師判定">
+      <UniqueIdentifier>{a746c613-767e-4d35-b633-b914cfa22a4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\06.セーブデータ">
+      <UniqueIdentifier>{084e4b2e-3708-4b6e-88d4-07285f4d99e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\S1.数値→漢数字">
+      <UniqueIdentifier>{f7d730d6-238b-4540-8833-618e9600d104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\80.都道府県">
+      <UniqueIdentifier>{d809e141-ab79-431e-b532-af57dc331963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\52.汎用顔グラ">
+      <UniqueIdentifier>{90afd894-32e6-4f92-8757-bba16c13b423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\57.汎用名">
+      <UniqueIdentifier>{08a3be59-0505-48eb-a535-a6812c3249d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\64.HexmapNB6">
+      <UniqueIdentifier>{f357b77b-5297-4d3b-a158-0b75c298b58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\07.プラグイン">
+      <UniqueIdentifier>{8844c24c-49bd-4724-875d-8374454f6752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\S4.ファイル名">
+      <UniqueIdentifier>{910e9b18-5780-4244-8d7c-04f738dd6e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\S2.日本語文字コード判別">
+      <UniqueIdentifier>{955304d6-28a5-46ab-9079-3912dfab76a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\65.城連結">
+      <UniqueIdentifier>{2734d2d0-bdff-4bc3-ae8d-efe1dbcd11ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\L1.KoeiLWライブラリ">
+      <UniqueIdentifier>{1ebb29a6-2217-4b97-89c9-586ab3d46e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09.リソース">
+      <UniqueIdentifier>{96ae8f51-1de3-46f1-afba-4cf1cee90a86}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="06.部外">
+      <UniqueIdentifier>{8f4a81d6-3efa-443e-9e83-63c45ac41468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06.部外\外部プログラムにDLLを注入">
+      <UniqueIdentifier>{6239455a-87d9-41f4-93a6-fa30aeedabd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\38.家表示">
+      <UniqueIdentifier>{58c4f425-02a7-4054-8f56-cffb0c8b0bf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\61.新規武将作成">
+      <UniqueIdentifier>{1ad79ffe-a374-4719-88c0-c4cece2d0e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.ソース\14.On系駆動【メイン】\29.独立">
+      <UniqueIdentifier>{e1a7ad1a-b6a6-4c2a-a256-ef76c68d88c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="62.シナリオ待機武将">
+      <UniqueIdentifier>{dab38a19-2827-42d7-a08b-573ec1e67bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.ヘッダー\P1.pngアニメ">
+      <UniqueIdentifier>{6e7ad88c-5787-45b9-9178-6843f6a463b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HumanRelation.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageInflection.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageInflectionEnding.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageInflectionSurfix.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageN6PPatch.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFukidashiTypeB.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFukidashiTypeBFocusChange.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGunshiFukidashiMessage.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMessageBuildLastestWord.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnRareMessageWriteMemory.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingScreenMenu.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnWsprintfOppositeIDAndStr.cpp">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfLifesIsTheTimes.cpp">
+      <Filter>05.ソース\03.駆動系サービス\01.寿命</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecutePirateMakePort.cpp">
+      <Filter>05.ソース\03.駆動系サービス\03.町発展</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteTeppouSpMakeSmith.cpp">
+      <Filter>05.ソース\03.駆動系サービス\03.町発展</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteAishoCalc.cpp">
+      <Filter>05.ソース\03.駆動系サービス\05.忠誠変化</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceCheckIncreaseSpecialProductByTheThing.cpp">
+      <Filter>05.ソース\03.駆動系サービス\08.資産変化</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceCheckOtherDaimyosGetMoneyAndRise.cpp">
+      <Filter>05.ソース\03.駆動系サービス\08.資産変化</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServicePlayerDaimyoDataInfluenceOtherDaimyoData.cpp">
+      <Filter>05.ソース\03.駆動系サービス\08.資産変化</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteFilterMerits.cpp">
+      <Filter>05.ソース\03.駆動系サービス\10.勲功 or 出世</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfAbilityIsUnderdeveloped.cpp">
+      <Filter>05.ソース\03.駆動系サービス\12.技能</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfCanAllAbilityInBattle.cpp">
+      <Filter>05.ソース\03.駆動系サービス\12.技能</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfBravesIsTheValue.cpp">
+      <Filter>05.ソース\03.駆動系サービス\14.パラメタIF</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfLifesIsTheValue.cpp">
+      <Filter>05.ソース\03.駆動系サービス\14.パラメタIF</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfNoDutiesMaxIndependences.cpp">
+      <Filter>05.ソース\03.駆動系サービス\14.パラメタIF</Filter>
+    </ClCompile>
+    <ClCompile Include="EXSuperService_IfYumiNoExists.cpp">
+      <Filter>05.ソース\03.駆動系サービス\14.パラメタIF</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteOnBushouSoldierChange.cpp">
+      <Filter>05.ソース\03.駆動系サービス\16.兵数【カスタム含】</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteOnRegeneration.cpp">
+      <Filter>05.ソース\03.駆動系サービス\16.兵数【カスタム含】</Filter>
+    </ClCompile>
+    <ClCompile Include="patchBugOfGundanYakusyokuInSenarioEditor.cpp">
+      <Filter>05.ソース\03.駆動系サービス\80.バグパッチ【軍団役職】</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteOnTurnChange.cpp">
+      <Filter>05.ソース\03.駆動系サービス\30.ターン等、切り替わり節目</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceBushouValueControll.cpp">
+      <Filter>05.ソース\03.駆動系サービス\20.能力変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEventsOfChangeSeasonTiming.cpp">
+      <Filter>05.ソース\03.駆動系サービス\31.季節霧変わり目イベント</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfFixExperienceMax.cpp">
+      <Filter>05.ソース\03.駆動系サービス\07.熟練度\最大化</Filter>
+    </ClCompile>
+    <ClCompile Include="FixExperienceDefault.cpp">
+      <Filter>05.ソース\03.駆動系サービス\07.熟練度\最大化</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoUpExperienceDefault.cpp">
+      <Filter>05.ソース\03.駆動系サービス\07.熟練度\自動鍛錬</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteIfAutoUpExperience.cpp">
+      <Filter>05.ソース\03.駆動系サービス\07.熟練度\自動鍛錬</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUpdateExperience.cpp">
+      <Filter>05.ソース\03.駆動系サービス\07.熟練度\戦時熟練度上昇逓減</Filter>
+    </ClCompile>
+    <ClCompile Include="EXServiceExecuteRoninKunkouDecrement.cpp">
+      <Filter>05.ソース\03.駆動系サービス\21.浪人勲功</Filter>
+    </ClCompile>
+    <ClCompile Include="EXBushou.cpp">
+      <Filter>05.ソース\04.特殊武将</Filter>
+    </ClCompile>
+    <ClCompile Include="EXBushou_All.cpp">
+      <Filter>05.ソース\04.特殊武将</Filter>
+    </ClCompile>
+    <ClCompile Include="EXBushou_LancelotTartare.cpp">
+      <Filter>05.ソース\04.特殊武将</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAfterChangeWindowSize.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDisitionScenarioIDOnSaveOrLoad.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEnteringFromScenarioDaimyo.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFunctionPointerTableJump.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGlobalFreeMemoryInGameEnd.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMainGameStart.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingScenario.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingScenarioDaimyo.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectWindowSize.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingEndLogo.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingScenarioTitleList.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingTopMenu.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnWritingScenarioDetail.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonGlobalHandle.cpp">
+      <Filter>05.ソース\01.ゲームデータ管理系</Filter>
+    </ClCompile>
+    <ClCompile Include="CurProcessGameMemory.cpp">
+      <Filter>05.ソース\01.ゲームデータ管理系</Filter>
+    </ClCompile>
+    <ClCompile Include="CurProcessMemory.cpp">
+      <Filter>05.ソース\01.ゲームデータ管理系</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDataStruct.cpp">
+      <Filter>05.ソース\01.ゲームデータ管理系</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveDataStructEx.cpp">
+      <Filter>05.ソース\01.ゲームデータ管理系</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveDataStructExFlag.cpp">
+      <Filter>05.ソース\01.ゲームデータ管理系</Filter>
+    </ClCompile>
+    <ClCompile Include="SndataN6PDataStruct.cpp">
+      <Filter>05.ソース\01.ゲームデータ管理系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncCamera.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\演出系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncFadeInOut.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\演出系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectBushouDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectBushouMultiDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectCastleDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectDaimyoDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectGundanDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectKahouDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectKaniDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSelectMenuDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncFukidashiDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncFukidashiDialogInBattle.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImageDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncImagePngDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncMessageDialog.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncPlayBGM.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\マルチメディア系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncPlayMovie.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\マルチメディア系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncPlayResourceWav.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\マルチメディア系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncBattleUnitNumRepaint.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncBattleUnitStateRepaint.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncGundanCastleWindowRepaint.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncWarScrennRepaint.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncDoDeatchInBattle.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\死亡・退却系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncDoDeatchInMain.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\死亡・退却系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncDoTaikyaukInBattle.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\死亡・退却系</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncSetWeather.cpp">
+      <Filter>05.ソース\40.TENSHOUラッパー関数\天気系</Filter>
+    </ClCompile>
+    <ClCompile Include="KahouN6P.cpp">
+      <Filter>05.ソース\16.家宝\01.家宝列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCoreIntersectRect.cpp">
+      <Filter>05.ソース\16.家宝\01.家宝列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDetailKahouGraphicPush.cpp">
+      <Filter>05.ソース\16.家宝\01.家宝列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDetailKahouLayout.cpp">
+      <Filter>05.ソース\16.家宝\01.家宝列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingKahouRetsuden.cpp">
+      <Filter>05.ソース\16.家宝\01.家宝列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogKahou.cpp">
+      <Filter>05.ソース\16.家宝\02.家宝アイコン</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogKahouMovie.cpp">
+      <Filter>05.ソース\16.家宝\02.家宝アイコン</Filter>
+    </ClCompile>
+    <ClCompile Include="JudgeKahouDialogBigMove.cpp">
+      <Filter>05.ソース\16.家宝\02.家宝アイコン</Filter>
+    </ClCompile>
+    <ClCompile Include="OnShowingKahouDetail.cpp">
+      <Filter>05.ソース\16.家宝\02.家宝アイコン</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingKahouDetail.cpp">
+      <Filter>05.ソース\16.家宝\02.家宝アイコン</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomKahouTypeStr.cpp">
+      <Filter>05.ソース\16.家宝\03.カスタム家宝種類</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingKahouDetailKahouType.cpp">
+      <Filter>05.ソース\16.家宝\03.カスタム家宝種類</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingKahouList.cpp">
+      <Filter>05.ソース\16.家宝\03.カスタム家宝種類</Filter>
+    </ClCompile>
+    <ClCompile Include="HookBitBltCustom.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="HookDefWindowProcACustom.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="HookFunctions.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="HookIntersectRectMessage.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="HookInvalidateRectMessage.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="HookMessageBoxACustom.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="HookTextOutACustom.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="OnKeyEventHandler.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMouseEventHander.cpp">
+      <Filter>05.ソース\99.カーネルフック関数</Filter>
+    </ClCompile>
+    <ClCompile Include="DDrawPatchOfHimeKao.cpp">
+      <Filter>05.ソース\50.KAOSWAP</Filter>
+    </ClCompile>
+    <ClCompile Include="KaoSwapExtend.cpp">
+      <Filter>05.ソース\50.KAOSWAP</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAptitudeKiba.cpp">
+      <Filter>05.ソース\11.On系駆動【パラメタ読み込み】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAptitudeTeppou.cpp">
+      <Filter>05.ソース\11.On系駆動【パラメタ読み込み】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAnsatsuAttackInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\08.暗殺</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSendouDoneOnceJudgement.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\02.煽動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSendouKonranAllMessage.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\02.煽動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSendouKonranIsOneOrAll.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\02.煽動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSendouKonranMultiKonran.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\02.煽動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSendouSelectingWhich.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\02.煽動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCastleFallDown.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\17.落城</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCurTekkousenFormCheck.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\50.ユニット形態</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDamagedOfAttack.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\05.被ダメージ</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleDefenceCoefOfNPC.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\06.門壊 and 城壊</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDamagedOfDoor.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\06.門壊 and 城壊</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMyDamageOfDoor.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\06.門壊 and 城壊</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAdditionMoveRemainPower.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnChangeGundanTurnInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnChangeWeather.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDecrementTurnInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnIncrementCastleTurnInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnNextTurnIsFieldOrCastle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPlayerGundanTurnEndInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSetTurnInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\60.ターン変化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnExecuteBattleAttackInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\10.２回行動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnExecuteBattleCommandInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\10.２回行動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMoveEndAnimationSetInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\10.２回行動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMoveEndJudgeInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\10.２回行動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMoveUnitAnimationChangeInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\10.２回行動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFireAttackSuccessInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\19.火攻め</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingBattleMenuInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\00.コマンド表示</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingCommandMenuInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\00.コマンド表示</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackTaihouMyself.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\32.大砲 or 鉄甲船砲攻撃回数</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTaihouAndTekkousenAttackTimesRewrite.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\32.大砲 or 鉄甲船砲攻撃回数</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTaihouAttack.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\32.大砲 or 鉄甲船砲攻撃回数</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTaihouAttackTimesRewrite.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\32.大砲 or 鉄甲船砲攻撃回数</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSoldierDraftConditionInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\15.徴兵</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSoldierDraftFilterInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\15.徴兵</Filter>
+    </ClCompile>
+    <ClCompile Include="OnRainRangeJudge.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\30.雨判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnNPCSelectingAttackPostMoveAfterInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\01.コマンド実行</Filter>
+    </ClCompile>
+    <ClCompile Include="OnNPCSelectingAttackPostMoveInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\01.コマンド実行</Filter>
+    </ClCompile>
+    <ClCompile Include="OnNPCSelectingAttackPrevMoveInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\01.コマンド実行</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPCSelectingAttackPostMoveInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\01.コマンド実行</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingAbilityInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\01.コマンド実行</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingAttackEventHandlerInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\01.コマンド実行</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingAttackInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\01.コマンド実行</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTaikyakuCastleInstructions.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\25.退却</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTaikyakuTryInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\25.退却</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTotsugekiResultTest.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\09.突撃</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSubstituteMaxSyutujinNum.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\24.出陣</Filter>
+    </ClCompile>
+    <ClCompile Include="OnIketottariInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\27.生け捕り</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUchitottariInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\27.生け捕り</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDeathInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\70.戦死</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTeppouDeathInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\70.戦死</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeTeppoutaiOrTeppouKiba.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\29.鉄砲射撃判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFireTeppou.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\30.鉄砲発射</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFireTeppouSE.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\30.鉄砲発射</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAttackDistanceAddition.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\28.攻撃可能距離判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeCanAnyAttackDistance.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\28.攻撃可能距離判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSetCanTaihouAndTekkousenDistance.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\28.攻撃可能距離判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeHasTaihouPatch.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\31.大砲所持判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSettingMovePower.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\11.移動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUnitMoveEnd.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\11.移動</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCheckRojoBushouNum.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\13.籠城</Filter>
+    </ClCompile>
+    <ClCompile Include="BeActgionEndInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\55.行動済み化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnActionEndInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\55.行動済み化</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDoumeiNegotiatePreviousBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\80.勢力</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSeiryokuInfoViewingInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\80.勢力</Filter>
+    </ClCompile>
+    <ClCompile Include="OnResultOfNaiouInBattle.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\03.内応</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeIsseikougekiMembers.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\07.一斉攻撃</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPostBattleTreatment.cpp">
+      <Filter>05.ソース\13.On系駆動【戦争開始～終了】\戦後処遇</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSuccessOrFailOfPostBattleTreatment.cpp">
+      <Filter>05.ソース\13.On系駆動【戦争開始～終了】\戦後処遇</Filter>
+    </ClCompile>
+    <ClCompile Include="OnBattleStartOfNPC.cpp">
+      <Filter>05.ソース\13.On系駆動【戦争開始～終了】\戦闘開始～終了</Filter>
+    </ClCompile>
+    <ClCompile Include="OnBattleStartOfPlayer.cpp">
+      <Filter>05.ソース\13.On系駆動【戦争開始～終了】\戦闘開始～終了</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTenshouExeBattleStartExecute.cpp">
+      <Filter>05.ソース\13.On系駆動【戦争開始～終了】\戦闘開始～終了</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCommerceBenzetsuJudge.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\05.商業</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCommerceSuccessJudge.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\05.商業</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCompareDeclineBat.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\08.老齢</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCompareDeclineGov.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\08.老齢</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCompareDeclineInt.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\08.老齢</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEmperorManeuvers.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\06.朝廷工作</Filter>
+    </ClCompile>
+    <ClCompile Include="OnHirouFukidashi.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\11.披露</Filter>
+    </ClCompile>
+    <ClCompile Include="OnHirouSelectingBushouList.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\11.披露</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCastleTurnChange.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\30.ターン等、切り替わり節目</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGundanTurnChange.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\30.ターン等、切り替わり節目</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPlayerTurnChange.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\30.ターン等、切り替わり節目</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSobaChange.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\30.ターン等、切り替わり節目</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSeiiTaishougunConditionCastleNum.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\25.征夷大将軍</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEndingAfterJumper.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\80.エンディング</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEndingConditionTest.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\80.エンディング</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEnteringDoEnding.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\80.エンディング</Filter>
+    </ClCompile>
+    <ClCompile Include="TeppouDenraiEvent.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\15.鉄砲イベント</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGungiDoing.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\12.軍議</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGungiFukidashi.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\12.軍議</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeGungiDone.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\12.軍議</Filter>
+    </ClCompile>
+    <ClCompile Include="OnBushouAnsatsuInMain.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\26.武将暗殺</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDaimyoAnsatsuMovieInMain.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\26.武将暗殺</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathFrequencyNotInfluenceLife.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\09.死亡頻度・寿命</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkToDieEverySeason.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\09.死亡頻度・寿命</Filter>
+    </ClCompile>
+    <ClCompile Include="CanInstructDirectOtherGundan.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\40.他軍団指示</Filter>
+    </ClCompile>
+    <ClCompile Include="IncreaseRatioCanDraftSoldier.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\60.徴兵可能数増加割合</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeResultKyohaku.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\14.脅迫</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherDaimyoNeverThreat.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\14.脅迫</Filter>
+    </ClCompile>
+    <ClCompile Include="DegreeLoyaltyOnCaptiveLibra.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\27.武将忠誠度</Filter>
+    </ClCompile>
+    <ClCompile Include="NonFaceBushouIndependences.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\28.旗揚げ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSwitchMainScreenSubCommand.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\02.サブコマンド</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncKaikenAI.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\35.会見</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGetPointerKaikenHeapMemory.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\35.会見</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingKaikenBushou.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\35.会見</Filter>
+    </ClCompile>
+    <ClCompile Include="KunkouIsNotResetOnRonin.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\50.勲功</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUpdateGennekiKunkouParam.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\50.勲功</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUpdateHataageKunkouParam.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\50.勲功</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUpdateRoninKunkouParam.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\50.勲功</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUpdateRoninOfWarKunkouParam.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\50.勲功</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckChangeYearDisp.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\70.西暦表示</Filter>
+    </ClCompile>
+    <ClCompile Include="GetWarekiFromYMD.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\70.西暦表示</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEnterMainPlayerCommand.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\01.メインコマンド侵入・脱出</Filter>
+    </ClCompile>
+    <ClCompile Include="OnLeaveMainPlayerCommand.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\01.メインコマンド侵入・脱出</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPrevMainPlayerCommandWait.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\01.メインコマンド侵入・脱出</Filter>
+    </ClCompile>
+    <ClCompile Include="OnUIPaintOfMainScreeenBackGround.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\32.UIローディング</Filter>
+    </ClCompile>
+    <ClCompile Include="OnShowingMibun.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\36.身分</Filter>
+    </ClCompile>
+    <ClCompile Include="OnShowingJotai.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\37.状態</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeResultOfNPCNaiouInMain.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\13.内応</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeResultOfPCNaiouInMain.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\13.内応</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingMainButaiHensyuUnitLongName.cpp">
+      <Filter>05.ソース\18.部隊名</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingMainBushouListButaimei.cpp">
+      <Filter>05.ソース\18.部隊名</Filter>
+    </ClCompile>
+    <ClCompile Include="SetOverWriteButaiMei.cpp">
+      <Filter>05.ソース\18.部隊名</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieBGMNonStopController.cpp">
+      <Filter>05.ソース\34.ムービー</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieBlackBackController.cpp">
+      <Filter>05.ソース\34.ムービー</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieMoveWindow.cpp">
+      <Filter>05.ソース\34.ムービー</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMovieWsprintfPush.cpp">
+      <Filter>05.ソース\34.ムービー</Filter>
+    </ClCompile>
+    <ClCompile Include="SetExtensionMovie.cpp">
+      <Filter>05.ソース\34.ムービー</Filter>
+    </ClCompile>
+    <ClCompile Include="TSModCommand.cpp">
+      <Filter>05.ソース\02.TSMod.ini</Filter>
+    </ClCompile>
+    <ClCompile Include="TSModPatchProcessMemory.cpp">
+      <Filter>05.ソース\02.TSMod.ini</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenarioMessageN6P.cpp">
+      <Filter>05.ソース\62.シナリオ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCallBackWindowProc.cpp">
+      <Filter>05.ソース\00.エントリー</Filter>
+    </ClCompile>
+    <ClCompile Include="TSMod.cpp">
+      <Filter>05.ソース\00.エントリー</Filter>
+    </ClCompile>
+    <ClCompile Include="TSModDirectDrawCreate.cpp">
+      <Filter>05.ソース\00.エントリー</Filter>
+    </ClCompile>
+    <ClCompile Include="TSModDummy.cpp">
+      <Filter>05.ソース\00.エントリー</Filter>
+    </ClCompile>
+    <ClCompile Include="StrFormatMatch.cpp">
+      <Filter>05.ソース\S0.文字列書式子</Filter>
+    </ClCompile>
+    <ClCompile Include="StrSplit.cpp">
+      <Filter>05.ソース\S0.文字列書式子</Filter>
+    </ClCompile>
+    <ClCompile Include="BFileN6P.cpp">
+      <Filter>05.ソース\55.BFileN6p</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_decode.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_decodePack.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_encode.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_encodePack.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_getFileData.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_joinData.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_outFileData.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="ls11_splitData.cpp">
+      <Filter>05.ソース\L0.LS11ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="MapData.cpp">
+      <Filter>05.ソース\05.MapDataN6P</Filter>
+    </ClCompile>
+    <ClCompile Include="AllocConsole.cpp">
+      <Filter>05.ソース\D0.デバッグウィンドウ</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputDebugStream.cpp">
+      <Filter>05.ソース\D0.デバッグウィンドウ</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputDebugString.cpp">
+      <Filter>05.ソース\D0.デバッグウィンドウ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnigRegex.cpp">
+      <Filter>05.ソース\R0.正規表現ライブラリ\02.鬼車インターフェイス</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\ascii.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\big5.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\cp1251.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_jp.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_kr.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_tw.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\gb18030.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_1.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_10.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_11.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_13.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_14.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_15.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_16.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_2.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_3.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_4.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_5.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_6.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_7.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_8.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_9.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\koi8.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\koi8_r.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regcomp.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regenc.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regerror.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regexec.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regext.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\reggnu.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regparse.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regposerr.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regposix.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regsyntax.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regtrav.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regversion.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\sjis.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\st.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\unicode.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf16_be.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf16_le.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf32_be.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf32_le.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf8.c">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertCharCode.cpp">
+      <Filter>05.ソース\S5.CP932⇔UTF8変換</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputDebugImage.cpp">
+      <Filter>05.ソース\B0.ビットマップ系</Filter>
+    </ClCompile>
+    <ClCompile Include="WinArgv.cpp">
+      <Filter>05.ソース\V0.メイン引数</Filter>
+    </ClCompile>
+    <ClCompile Include="ToCopyClipboard.cpp">
+      <Filter>05.ソース\C7.クリップボード</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerMessageBox.cpp">
+      <Filter>05.ソース\M0.メッセージボックス</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>05.ソース\70.フォント</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSystemMenu.cpp">
+      <Filter>05.ソース\M1.メニュー</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>05.ソース\M1.メニュー</Filter>
+    </ClCompile>
+    <ClCompile Include="GodPatch.cpp">
+      <Filter>05.ソース\K0.神パッチ</Filter>
+    </ClCompile>
+    <ClCompile Include="Json.cpp">
+      <Filter>05.ソース\J0.JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="CWave.cpp">
+      <Filter>05.ソース\A0.オーディオ\xaudioのクラス例</Filter>
+    </ClCompile>
+    <ClCompile Include="CXAudio.cpp">
+      <Filter>05.ソース\A0.オーディオ\xaudioのクラス例</Filter>
+    </ClCompile>
+    <ClCompile Include="X3DAudioSample.cpp">
+      <Filter>05.ソース\A0.オーディオ\xaudioのクラス例</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKwavefile.cpp">
+      <Filter>05.ソース\A0.オーディオ\X3DAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKXAudio.cpp">
+      <Filter>05.ソース\A0.オーディオ\X3DAudio</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundModServerCall.cpp">
+      <Filter>05.ソース\A0.オーディオ\IOSoundMap</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundServer.cpp">
+      <Filter>05.ソース\A0.オーディオ\IOSoundMap</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteSoundMap.cpp">
+      <Filter>05.ソース\A0.オーディオ\IOSoundMap</Filter>
+    </ClCompile>
+    <ClCompile Include="INMM.cpp">
+      <Filter>05.ソース\A0.オーディオ\INMM</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeBGMTrackNum.cpp">
+      <Filter>05.ソース\A0.オーディオ\BGM曲数</Filter>
+    </ClCompile>
+    <ClCompile Include="OnN6PAudioPlayTrack.cpp">
+      <Filter>05.ソース\A0.オーディオ\BGM切替時</Filter>
+    </ClCompile>
+    <ClCompile Include="OnWarBGMCheck.cpp">
+      <Filter>05.ソース\A0.オーディオ\BGM切替時</Filter>
+    </ClCompile>
+    <ClCompile Include="BGMmm.cpp">
+      <Filter>05.ソース\A0.オーディオ\BGMmm</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckAudioTypeCD.cpp">
+      <Filter>05.ソース\A0.オーディオ\音楽トラックCD</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayCDTrack.cpp">
+      <Filter>05.ソース\A0.オーディオ\音楽トラックCD</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayMP3Test.cpp">
+      <Filter>05.ソース\A0.オーディオ\音楽トラックCD</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiDebug.cpp">
+      <Filter>05.ソース\D0.アンチデバッグ</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeStamp.cpp">
+      <Filter>05.ソース\T0.タイムスタンプ</Filter>
+    </ClCompile>
+    <ClCompile Include="CnvHankakuZenakaku.cpp">
+      <Filter>05.ソース\S6.半角⇔全角変換</Filter>
+    </ClCompile>
+    <ClCompile Include="GetOSVersion.cpp">
+      <Filter>05.ソース\O0.OS判定</Filter>
+    </ClCompile>
+    <ClCompile Include="GetResolution.cpp">
+      <Filter>05.ソース\35.解像度</Filter>
+    </ClCompile>
+    <ClCompile Include="ResolutionMobile.cpp">
+      <Filter>05.ソース\35.解像度</Filter>
+    </ClCompile>
+    <ClCompile Include="ResolutionWide.cpp">
+      <Filter>05.ソース\35.解像度</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableNameRegistAndJudge.cpp">
+      <Filter>05.ソース\58.武将名バリエーション判定</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Amb.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Apti_Chikujo.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Apti_Gaikou.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Apti_Nougyou.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Apti_Syougyou.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Apti_Touyou.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Bat.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Bat_Ashigaru.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Bat_Kiba.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Bat_Suigun.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Bat_Teppou.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Bat_Yari.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Bat_Yumi.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Chm.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Cmd.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Edu.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Gir.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Gov.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AvgParam_Int.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="SetBushouAvgParam.cpp">
+      <Filter>05.ソース\59.歴代平均データ</Filter>
+    </ClCompile>
+    <ClCompile Include="AppearanceHimeBecomeBushou.cpp">
+      <Filter>05.ソース\60.待機武将</Filter>
+    </ClCompile>
+    <ClCompile Include="OnTaikiAppearance.cpp">
+      <Filter>05.ソース\60.待機武将</Filter>
+    </ClCompile>
+    <ClCompile Include="2DDirectString.cpp">
+      <Filter>05.ソース\M3.数学・幾何学</Filter>
+    </ClCompile>
+    <ClCompile Include="2DPosition.cpp">
+      <Filter>05.ソース\M3.数学・幾何学</Filter>
+    </ClCompile>
+    <ClCompile Include="3DPosition.cpp">
+      <Filter>05.ソース\M3.数学・幾何学</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBoost.cpp">
+      <Filter>05.ソース\M3.数学・幾何学</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryMath.cpp">
+      <Filter>05.ソース\M3.数学・幾何学</Filter>
+    </ClCompile>
+    <ClCompile Include="tmath.cpp">
+      <Filter>05.ソース\M3.数学・幾何学</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingBushouDetailKibaTeppou.cpp">
+      <Filter>05.ソース\19.武将詳細画面\特殊部隊</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingJobInBushouDetail.cpp">
+      <Filter>05.ソース\19.武将詳細画面\職業</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingJobNoInBushouDetail.cpp">
+      <Filter>05.ソース\19.武将詳細画面\職業</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingBushouDetailButaimei.cpp">
+      <Filter>05.ソース\19.武将詳細画面\部隊名</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingBusyouRetsuden.cpp">
+      <Filter>05.ソース\19.武将詳細画面\武将列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>05.ソース\X0.XML</Filter>
+    </ClCompile>
+    <ClCompile Include="xmltest.cpp">
+      <Filter>05.ソース\X0.XML</Filter>
+    </ClCompile>
+    <ClCompile Include="NoCompactDisk.cpp">
+      <Filter>05.ソース\N0.ディスクレス</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFindTenshoukiDisk.cpp">
+      <Filter>05.ソース\N0.ディスクレス</Filter>
+    </ClCompile>
+    <ClCompile Include="GetProcessCount.cpp">
+      <Filter>05.ソース\P0.プロセス判定</Filter>
+    </ClCompile>
+    <ClCompile Include="SetNeedKoudouryoku.cpp">
+      <Filter>05.ソース\32.行動力</Filter>
+    </ClCompile>
+    <ClCompile Include="SetHelpFileName.cpp">
+      <Filter>05.ソース\90.ヘルプファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GetSpecialFoldierPath.cpp">
+      <Filter>05.ソース\S3.スペシャルフォルダー</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeMainCommissionCancel.cpp">
+      <Filter>05.ソース\80.委任解除</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeWarCommissionCancel.cpp">
+      <Filter>05.ソース\80.委任解除</Filter>
+    </ClCompile>
+    <ClCompile Include="OnEditingButai.cpp">
+      <Filter>05.ソース\25.部隊編成</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingOneBushouOfBushouList.cpp">
+      <Filter>05.ソース\28.武将選択・武将一覧・姫選択</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectingBushouList.cpp">
+      <Filter>05.ソース\28.武将選択・武将一覧・姫選択</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewingBushouListTitle.cpp">
+      <Filter>05.ソース\28.武将選択・武将一覧・姫選択</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingBushouListKibaTeppou.cpp">
+      <Filter>05.ソース\28.武将選択・武将一覧・姫選択\特殊部隊</Filter>
+    </ClCompile>
+    <ClCompile Include="OnJudgeHimeHantei.cpp">
+      <Filter>05.ソース\29.姫判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingHimeDetail.cpp">
+      <Filter>05.ソース\20.姫詳細画面</Filter>
+    </ClCompile>
+    <ClCompile Include="OnLoadSaveDataInGame.cpp">
+      <Filter>05.ソース\06.セーブデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnLoadSavevDataInOpening.cpp">
+      <Filter>05.ソース\06.セーブデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPushSaveFileName.cpp">
+      <Filter>05.ソース\06.セーブデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPushSaveFileNameOfUnknown.cpp">
+      <Filter>05.ソース\06.セーブデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSaveSaveDataInGame.cpp">
+      <Filter>05.ソース\06.セーブデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectSaveOrLoadNo.cpp">
+      <Filter>05.ソース\06.セーブデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDDrawWindowProcA.cpp">
+      <Filter>05.ソース\D1.DDrawフック</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchDDrawHimekaoAppearBug.cpp">
+      <Filter>05.ソース\D1.DDrawフック</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchDDrawWindowProcA.cpp">
+      <Filter>05.ソース\D1.DDrawフック</Filter>
+    </ClCompile>
+    <ClCompile Include="KamonDataAndPalette.cpp">
+      <Filter>05.ソース\17.家紋</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitTimeProcedure.cpp">
+      <Filter>05.ソース\W0.Wait処理</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncGetGunshiBushouID.cpp">
+      <Filter>05.ソース\27.軍師判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGetGunshiBushouID.cpp">
+      <Filter>05.ソース\27.軍師判定</Filter>
+    </ClCompile>
+    <ClCompile Include="Arabia2Kanji.cpp">
+      <Filter>05.ソース\S1.数値→漢数字</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTodouhukenWeather.cpp">
+      <Filter>05.ソース\80.都道府県</Filter>
+    </ClCompile>
+    <ClCompile Include="Todouhuken.cpp">
+      <Filter>05.ソース\80.都道府県</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryGeneralKaoFace.cpp">
+      <Filter>05.ソース\52.汎用顔グラ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDecideOfGeneralKaoFace.cpp">
+      <Filter>05.ソース\52.汎用顔グラ</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryGeneralBushouName.cpp">
+      <Filter>05.ソース\57.汎用名</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralBushouBorn.cpp">
+      <Filter>05.ソース\61.汎用武将誕生</Filter>
+    </ClCompile>
+    <ClCompile Include="HexMapNB6.cpp">
+      <Filter>05.ソース\64.Hexmap</Filter>
+    </ClCompile>
+    <ClCompile Include="HexRoleCollision.cpp">
+      <Filter>05.ソース\63.Hex当たり判定</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGetDaimyoKoukeisyaBushouID.cpp">
+      <Filter>05.ソース\30.大名後継者判定</Filter>
+    </ClCompile>
+    <ClCompile Include="lua\lua_interface.cpp">
+      <Filter>05.ソース\L1.Luaインタプリタ\インタプリタIF</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginMod.cpp">
+      <Filter>05.ソース\07.プラグイン</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenarioMod.cpp">
+      <Filter>05.ソース\07.プラグイン</Filter>
+    </ClCompile>
+    <ClCompile Include="TenShougiMod.cpp">
+      <Filter>05.ソース\07.プラグイン</Filter>
+    </ClCompile>
+    <ClCompile Include="TenShougiModBegin.cpp">
+      <Filter>05.ソース\07.プラグイン</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFileName.cpp">
+      <Filter>05.ソース\S4.ファイル名</Filter>
+    </ClCompile>
+    <ClCompile Include="OnInputNumberDialog.cpp">
+      <Filter>05.ソース\23.数値入力ダイアログ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnConfirmRatificationDialog.cpp">
+      <Filter>05.ソース\24.追認系ダイアログ確認時</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlPane.cpp">
+      <Filter>05.ソース\C9.コントロールパネル</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCheckDiskSpace.cpp">
+      <Filter>05.ソース\D2.ディスクスペース</Filter>
+    </ClCompile>
+    <ClCompile Include="nmh.c">
+      <Filter>05.ソース\S2.日本語文字コード判別</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleConnectEdge.cpp">
+      <Filter>05.ソース\65.城連結</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra.cpp">
+      <Filter>05.ソース\65.城連結</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra_draw.cpp">
+      <Filter>05.ソース\65.城連結</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra_io.cpp">
+      <Filter>05.ソース\65.城連結</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra_node.cpp">
+      <Filter>05.ソース\65.城連結</Filter>
+    </ClCompile>
+    <ClCompile Include="DijkstraCastle.cpp">
+      <Filter>05.ソース\65.城連結</Filter>
+    </ClCompile>
+    <ClCompile Include="AnyContainer.cpp">
+      <Filter>05.ソース\C2.Anyコンテナ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnFaceNumberAccess.cpp">
+      <Filter>05.ソース\51.顔グラアクセス</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMainWindowCastleButton.cpp">
+      <Filter>05.ソース\15.城列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingCastleRetsuden.cpp">
+      <Filter>05.ソース\15.城列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingCastleRetsudenFunc.cpp">
+      <Filter>05.ソース\15.城列伝</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMouseDriverIsInstalledInPC.cpp">
+      <Filter>05.ソース\M2.マウス</Filter>
+    </ClCompile>
+    <ClCompile Include="KoeiLWDecorder.cpp">
+      <Filter>05.ソース\L1.KoeiLWライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingNaiseiExecutantsEtc5NingumiDialog.cpp">
+      <Filter>05.ソース\31.内政実行者等表示枠</Filter>
+    </ClCompile>
+    <ClCompile Include="OnViewingNaiseiExecutantsEtc5NingumiWakuNum.cpp">
+      <Filter>05.ソース\31.内政実行者等表示枠</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncCanYusou.cpp">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\輸送</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDllToOtherProcess.cpp">
+      <Filter>06.部外\外部プログラムにDLLを注入</Filter>
+    </ClCompile>
+    <ClCompile Include="OnShowingIe.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\38.家表示</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDefenceBushouHeisuuZero.cpp">
+      <Filter>05.ソース\12.On系駆動【戦争】\25.退却</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDecideMakeNewBushou.cpp">
+      <Filter>05.ソース\61.新規武将作成</Filter>
+    </ClCompile>
+    <ClCompile Include="OnGundantyoUragiriDokuritsu.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\29.独立</Filter>
+    </ClCompile>
+    <ClCompile Include="OnSelectingScenarioAfter.cpp">
+      <Filter>05.ソース\09.On系駆動【ゲーム全体系】</Filter>
+    </ClCompile>
+    <ClCompile Include="OnIncrementTaikiBushouCount.cpp">
+      <Filter>05.ソース\60.待機武将</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenarioTaikiBushouN6P.cpp">
+      <Filter>62.シナリオ待機武将</Filter>
+    </ClCompile>
+    <ClCompile Include="OnNenreiZoukaSyori.cpp">
+      <Filter>05.ソース\14.On系駆動【メイン】\08.老齢</Filter>
+    </ClCompile>
+    <ClCompile Include="EXBushou_ShuiHidechiyo.cpp">
+      <Filter>05.ソース\04.特殊武将</Filter>
+    </ClCompile>
+    <ClCompile Include="DarkModeTitleBarMod.cpp">
+      <Filter>05.ソース\D1.DDrawフック</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MessageN6PTemplate.h">
+      <Filter>05.ソース\21.メッセージ</Filter>
+    </ClInclude>
+    <ClInclude Include="OnEnterMainPlayerCommand.h">
+      <Filter>05.ソース\14.On系駆動【メイン】\01.メインコマンド侵入・脱出</Filter>
+    </ClInclude>
+    <ClInclude Include="lua\lua_interface.h">
+      <Filter>05.ソース\L1.Luaインタプリタ\インタプリタIF</Filter>
+    </ClInclude>
+    <ClInclude Include="Dijkstra.h">
+      <Filter>05.ソース\65.城連結</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonGlobalHandle.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="CurProcessGameMemory.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="CurProcessMemory.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStruct.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveDataStructEx.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="SndataN6PDataStruct.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogKahou.h">
+      <Filter>03.ヘッダー\16.家宝\02.家宝アイコン</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogKahouMovie.h">
+      <Filter>03.ヘッダー\16.家宝\02.家宝アイコン</Filter>
+    </ClInclude>
+    <ClInclude Include="KahouN6P.h">
+      <Filter>03.ヘッダー\16.家宝\01.家宝列伝</Filter>
+    </ClInclude>
+    <ClInclude Include="KahouType.h">
+      <Filter>03.ヘッダー\16.家宝\03.家宝種類</Filter>
+    </ClInclude>
+    <ClInclude Include="EXBushou.h">
+      <Filter>03.ヘッダー\03.駆動系サービス</Filter>
+    </ClInclude>
+    <ClInclude Include="EXServiceExecute.h">
+      <Filter>03.ヘッダー\03.駆動系サービス</Filter>
+    </ClInclude>
+    <ClInclude Include="EXBushou_All.h">
+      <Filter>03.ヘッダー\04.特殊武将</Filter>
+    </ClInclude>
+    <ClInclude Include="EXBushou_LancelotTartare.h">
+      <Filter>03.ヘッダー\04.特殊武将</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectBushouDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectBushouMultiDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectCastleDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectDaimyoDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectGundanDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectKahouDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectKaniDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\選択リスト系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImageDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\画像系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncImagePngDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\画像系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncFadeInOut.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\演出系系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncMoveCamera.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\演出系系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncPlayBGM.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\マルチメディア系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncPlayMovie.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\マルチメディア系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncPlayResourceWav.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\マルチメディア系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncBattleUnitNumRepaint.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncBattleUnitStateRepaint.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncGundanCastleWindowRepaint.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncWarScreenRepaint.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\描画更新系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncFukidashiDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncFukidashiDialogInBattle.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncMessageDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSelectMenuDialog.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\ダイアログ系</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncDoDeath.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\死亡・逃亡系鵜</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncDoTaikyaku.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\死亡・逃亡系鵜</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncSetWeather.h">
+      <Filter>03.ヘッダー\40.TENSHOUラッパー関数\天気系</Filter>
+    </ClInclude>
+    <ClInclude Include="HookBitBltCustom.h">
+      <Filter>03.ヘッダー\99.カーネルフック関数</Filter>
+    </ClInclude>
+    <ClInclude Include="HookDefWindowProcACustom.h">
+      <Filter>03.ヘッダー\99.カーネルフック関数</Filter>
+    </ClInclude>
+    <ClInclude Include="HookFunctions.h">
+      <Filter>03.ヘッダー\99.カーネルフック関数</Filter>
+    </ClInclude>
+    <ClInclude Include="HookIntersectRectMessage.h">
+      <Filter>03.ヘッダー\99.カーネルフック関数</Filter>
+    </ClInclude>
+    <ClInclude Include="HookInvalidateRectMessage.h">
+      <Filter>03.ヘッダー\99.カーネルフック関数</Filter>
+    </ClInclude>
+    <ClInclude Include="HookMessageBoxACustom.h">
+      <Filter>03.ヘッダー\99.カーネルフック関数</Filter>
+    </ClInclude>
+    <ClInclude Include="HookTextOutACustom.h">
+      <Filter>03.ヘッダー\99.カーネルフック関数</Filter>
+    </ClInclude>
+    <ClInclude Include="KaoSwapExtend.h">
+      <Filter>03.ヘッダー\50.KAOSWAP</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanRelation.h">
+      <Filter>03.ヘッダー\21.メッセージ</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageInflection.h">
+      <Filter>03.ヘッダー\21.メッセージ</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageInflectionEnding.h">
+      <Filter>03.ヘッダー\21.メッセージ</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageInflectionSurfix.h">
+      <Filter>03.ヘッダー\21.メッセージ</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageN6PPatch.h">
+      <Filter>03.ヘッダー\21.メッセージ</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeIsseikougekiMembers.h">
+      <Filter>03.ヘッダー\12.On系駆動【戦争】</Filter>
+    </ClInclude>
+    <ClInclude Include="OnChangeWeather.h">
+      <Filter>03.ヘッダー\12.On系駆動【戦争】</Filter>
+    </ClInclude>
+    <ClInclude Include="OnFireAttackSuccessInBattle.h">
+      <Filter>03.ヘッダー\12.On系駆動【戦争】</Filter>
+    </ClInclude>
+    <ClInclude Include="OnViewingBattleMenuInBattle.h">
+      <Filter>03.ヘッダー\12.On系駆動【戦争】</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMyDamageOfDoor.h">
+      <Filter>03.ヘッダー\12.On系駆動【戦争】</Filter>
+    </ClInclude>
+    <ClInclude Include="TSMod.h">
+      <Filter>03.ヘッダー\00.エントリー</Filter>
+    </ClInclude>
+    <ClInclude Include="TSModCommand.h">
+      <Filter>03.ヘッダー\02.TSMod.ini</Filter>
+    </ClInclude>
+    <ClInclude Include="TSModPatchProcessMemory.h">
+      <Filter>03.ヘッダー\02.TSMod.ini</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenarioDataStruct.h">
+      <Filter>03.ヘッダー\62.シナリオ</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenarioMessageN6PPatch.h">
+      <Filter>03.ヘッダー\62.シナリオ</Filter>
+    </ClInclude>
+    <ClInclude Include="BFileN6P.h">
+      <Filter>03.ヘッダー\55.BFileN6P</Filter>
+    </ClInclude>
+    <ClInclude Include="ls11_lib.h">
+      <Filter>03.ヘッダー\L0.LS11ライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="ls11_mod.h">
+      <Filter>03.ヘッダー\L0.LS11ライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="MapData.h">
+      <Filter>03.ヘッダー\45.MapDataN6P</Filter>
+    </ClInclude>
+    <ClInclude Include="AllocConsole.h">
+      <Filter>03.ヘッダー\D0.デバッグ</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputDebugStream.h">
+      <Filter>03.ヘッダー\D0.デバッグ</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputDebugString.h">
+      <Filter>03.ヘッダー\D0.デバッグ</Filter>
+    </ClInclude>
+    <ClInclude Include="OnigRegex.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\02.鬼車インターフェイス</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\onigconfig.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\oniggnu.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\onigposix.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\oniguruma.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\regenc.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\regint.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\regparse.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="oniguruma\st.h">
+      <Filter>03.ヘッダー\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertCharCode.h">
+      <Filter>03.ヘッダー\C0.CP932⇔UTF8変換</Filter>
+    </ClInclude>
+    <ClInclude Include="StrFormatMatch.h">
+      <Filter>03.ヘッダー\S0.文字列書式子</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerMessageBox.h">
+      <Filter>03.ヘッダー\M0.メッセージボックス</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>03.ヘッダー\70.フォント</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>03.ヘッダー\M1.メニュー</Filter>
+    </ClInclude>
+    <ClInclude Include="GodPatch.h">
+      <Filter>03.ヘッダー\K0.神パッチ</Filter>
+    </ClInclude>
+    <ClInclude Include="inmm.h">
+      <Filter>03.ヘッダー\A0.オーディオ\INMM</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeStamp.h">
+      <Filter>03.ヘッダー\T0.タイムスタンプ</Filter>
+    </ClInclude>
+    <ClInclude Include="CnvHankakuZenkaku.h">
+      <Filter>03.ヘッダー\S6.全角⇔半角変換</Filter>
+    </ClInclude>
+    <ClInclude Include="GetOSVersion.h">
+      <Filter>03.ヘッダー\O0.OS判定</Filter>
+    </ClInclude>
+    <ClInclude Include="WinTarget.h">
+      <Filter>03.ヘッダー\O0.OS判定</Filter>
+    </ClInclude>
+    <ClInclude Include="SetExtensionMovie.h">
+      <Filter>03.ヘッダー\34.ムービー</Filter>
+    </ClInclude>
+    <ClInclude Include="ResolutionMobile.h">
+      <Filter>03.ヘッダー\35.解像度</Filter>
+    </ClInclude>
+    <ClInclude Include="ResolutionWide.h">
+      <Filter>03.ヘッダー\35.解像度</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableNameRegistAndJudge.h">
+      <Filter>03.ヘッダー\58.武将名バリエーション判定</Filter>
+    </ClInclude>
+    <ClInclude Include="SetBushouAvgParam.h">
+      <Filter>03.ヘッダー\59.歴代平均データ</Filter>
+    </ClInclude>
+    <ClInclude Include="2DDirectString.h">
+      <Filter>03.ヘッダー\M3.数学・幾何学</Filter>
+    </ClInclude>
+    <ClInclude Include="2DPosition.h">
+      <Filter>03.ヘッダー\M3.数学・幾何学</Filter>
+    </ClInclude>
+    <ClInclude Include="3DPosition.h">
+      <Filter>03.ヘッダー\M3.数学・幾何学</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryMath.h">
+      <Filter>03.ヘッダー\M3.数学・幾何学</Filter>
+    </ClInclude>
+    <ClInclude Include="tmath.h">
+      <Filter>03.ヘッダー\M3.数学・幾何学</Filter>
+    </ClInclude>
+    <ClInclude Include="SetOverWriteButaiMei.h">
+      <Filter>03.ヘッダー\18.部隊名</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>03.ヘッダー\X0.XML</Filter>
+    </ClInclude>
+    <ClInclude Include="GetProcessCount.h">
+      <Filter>03.ヘッダー\P0.プロセス判定</Filter>
+    </ClInclude>
+    <ClInclude Include="NoCompactDisk.h">
+      <Filter>03.ヘッダー\N0.ディスクレス</Filter>
+    </ClInclude>
+    <ClInclude Include="SetNeedKoudouryoku.h">
+      <Filter>03.ヘッダー\32.行動力</Filter>
+    </ClInclude>
+    <ClInclude Include="SetHelpFileName.h">
+      <Filter>03.ヘッダー\90.ヘルプファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitTimeProcedure.h">
+      <Filter>03.ヘッダー\W0.Wait処理</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncGetGunshiBushouID.h">
+      <Filter>03.ヘッダー\27.軍師判定</Filter>
+    </ClInclude>
+    <ClInclude Include="Arabia2Kanji.h">
+      <Filter>03.ヘッダー\S1.数値→漢数字</Filter>
+    </ClInclude>
+    <ClInclude Include="Todouhuken.h">
+      <Filter>03.ヘッダー\80.都道府県</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryGeneralKaoFace.h">
+      <Filter>03.ヘッダー\52.汎用顔グラ</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryGeneralBushouName.h">
+      <Filter>03.ヘッダー\57.汎用名</Filter>
+    </ClInclude>
+    <ClInclude Include="HexmapNB6.h">
+      <Filter>03.ヘッダー\64.HexmapNB6</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginMod.h">
+      <Filter>03.ヘッダー\07.プラグイン</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenarioMod.h">
+      <Filter>03.ヘッダー\07.プラグイン</Filter>
+    </ClInclude>
+    <ClInclude Include="TenShougiMod.h">
+      <Filter>03.ヘッダー\07.プラグイン</Filter>
+    </ClInclude>
+    <ClInclude Include="GetFileName.h">
+      <Filter>03.ヘッダー\S4.ファイル名</Filter>
+    </ClInclude>
+    <ClInclude Include="nmh.h">
+      <Filter>03.ヘッダー\S2.日本語文字コード判別</Filter>
+    </ClInclude>
+    <ClInclude Include="DijkstraCastle.h">
+      <Filter>03.ヘッダー\65.城連結</Filter>
+    </ClInclude>
+    <ClInclude Include="KoeiLWDecode.h">
+      <Filter>03.ヘッダー\L1.KoeiLWライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>09.リソース</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructBushou.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructBattle.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructCastle.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructMainTurn.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructGundan.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructDaimyo.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructMaxmum.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructKahou.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructUI.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructChimei.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructKani.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructYakusyoku.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructMainCommand.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDataStructTaikiBushou.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </ClInclude>
+    <ClInclude Include="EXBushou_ShuiHidechiyo.h">
+      <Filter>03.ヘッダー\04.特殊武将</Filter>
+    </ClInclude>
+    <ClInclude Include="DarkModeTitleBarMod.h">
+      <Filter>03.ヘッダー\07.プラグイン</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TSMod.def">
+      <Filter>05.ソース\00.エントリー</Filter>
+    </None>
+    <None Include="GameDataStructSettings.h">
+      <Filter>03.ヘッダー\01.ゲームデータ管理系</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="oniguruma\oniguruma.lib">
+      <Filter>05.ソース\R0.正規表現ライブラリ\01.鬼車</Filter>
+    </Library>
+    <Library Include="bgmmm\BGMmm.lib">
+      <Filter>05.ソース\A0.オーディオ\BGMmm</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TSMod.rc">
+      <Filter>09.リソース</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GeometryBoost.mht">
+      <Filter>05.ソース\M3.数学・幾何学</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OutputDebugImage.h">
+      <Filter>03.ヘッダー\B0.ビットマップ系</Filter>
+    </CustomBuild>
+    <CustomBuild Include="WinArgv.h">
+      <Filter>03.ヘッダー\V0.メイン引数</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ToCopyClipboard.h">
+      <Filter>03.ヘッダー\C7.クリップボード</Filter>
+    </CustomBuild>
+    <CustomBuild Include="picojson.h">
+      <Filter>03.ヘッダー\J0.JSON</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CWave.h">
+      <Filter>03.ヘッダー\A0.オーディオ\xaudio2のクラス例</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CXAudio.h">
+      <Filter>03.ヘッダー\A0.オーディオ\xaudio2のクラス例</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XAudioDbg.h">
+      <Filter>03.ヘッダー\A0.オーディオ\xaudio2のクラス例</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SDKwavefile.h">
+      <Filter>03.ヘッダー\A0.オーディオ\X3DAudio</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SDKXAudio.h">
+      <Filter>03.ヘッダー\A0.オーディオ\X3DAudio</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SoundServer.h">
+      <Filter>03.ヘッダー\A0.オーディオ\IOSoundMap</Filter>
+    </CustomBuild>
+    <CustomBuild Include="WriteSoundMap.h">
+      <Filter>03.ヘッダー\A0.オーディオ\IOSoundMap</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AntiDebug.h">
+      <Filter>03.ヘッダー\D0.アンチデバッグ</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TString.h">
+      <Filter>03.ヘッダー\S7.マルチ⇔ワイド変換</Filter>
+    </CustomBuild>
+    <CustomBuild Include="日本語文字コード判別.txt">
+      <Filter>03.ヘッダー\S2.日本語文字コード判別</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

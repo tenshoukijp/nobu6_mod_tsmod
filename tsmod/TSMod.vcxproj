@@ -1,0 +1,1108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SemiDebug|Win32">
+      <Configuration>SemiDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SemiRelease|Win32">
+      <Configuration>SemiRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AA0A0F4-7F17-4488-BB94-9E3A6FFE9DA6}</ProjectGuid>
+    <RootNamespace>TSMod</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SemiRelease|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SemiRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SemiRelease|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/TSMod.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zp1 /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_ERNEL32_EXPORTS;_USE_MATH_DEFINES;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/TSMod.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Release/TSMod.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\TSMod.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>.\Release/TSMod.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <StackReserveSize>15000000</StackReserveSize>
+      <StackCommitSize>0</StackCommitSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <FixedBaseAddress />
+      <DataExecutionPrevention />
+      <ImportLibrary>.\Release/TSMod.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/TSMod.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/TSMod.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zp1 /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_ERNEL32_EXPORTS;_USE_MATH_DEFINES;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>StackFrameRuntimeCheck</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <PrecompiledHeaderOutputFile>.\Debug/TSMod.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../../TSMod.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>C:\usr\microsoft_visual_studio\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\TSMod.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/TSMod.pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>.\Debug/TSMod.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/TSMod.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SemiRelease|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/TSMod.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_ERNEL32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/TSMod.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\SemiRelease/TSMod.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\TSMod.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>.\Release/TSMod.pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>.\Release/TSMod.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/TSMod.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/TSMod.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zp1 /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;_ERNEL32_EXPORTS;_USE_MATH_DEFINES;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\Release/TSMod.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Release/TSMod.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\TSMod.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/TSMod.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <StackReserveSize>12388608</StackReserveSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>.\Release/TSMod.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/TSMod.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2DDirectString.cpp" />
+    <ClCompile Include="2DPosition.cpp" />
+    <ClCompile Include="3DPosition.cpp" />
+    <ClCompile Include="AddSystemMenu.cpp" />
+    <ClCompile Include="AllocConsole.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AntiDebug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AnyContainer.cpp" />
+    <ClCompile Include="AppearanceHimeBecomeBushou.cpp" />
+    <ClCompile Include="Arabia2Kanji.cpp" />
+    <ClCompile Include="AttackTaihouMyself.cpp" />
+    <ClCompile Include="AutoUpExperienceDefault.cpp" />
+    <ClCompile Include="AvgParam_Amb.cpp" />
+    <ClCompile Include="AvgParam_Apti_Chikujo.cpp" />
+    <ClCompile Include="AvgParam_Apti_Gaikou.cpp" />
+    <ClCompile Include="AvgParam_Apti_Nougyou.cpp" />
+    <ClCompile Include="AvgParam_Apti_Syougyou.cpp" />
+    <ClCompile Include="AvgParam_Apti_Touyou.cpp" />
+    <ClCompile Include="AvgParam_Bat.cpp" />
+    <ClCompile Include="AvgParam_Bat_Ashigaru.cpp" />
+    <ClCompile Include="AvgParam_Bat_Kiba.cpp" />
+    <ClCompile Include="AvgParam_Bat_Suigun.cpp" />
+    <ClCompile Include="AvgParam_Bat_Teppou.cpp" />
+    <ClCompile Include="AvgParam_Bat_Yari.cpp" />
+    <ClCompile Include="AvgParam_Bat_Yumi.cpp" />
+    <ClCompile Include="AvgParam_Chm.cpp" />
+    <ClCompile Include="AvgParam_Cmd.cpp" />
+    <ClCompile Include="AvgParam_Edu.cpp" />
+    <ClCompile Include="AvgParam_Gir.cpp" />
+    <ClCompile Include="AvgParam_Gov.cpp" />
+    <ClCompile Include="AvgParam_Int.cpp" />
+    <ClCompile Include="BeActgionEndInBattle.cpp" />
+    <ClCompile Include="BFileN6P.cpp" />
+    <ClCompile Include="BGMmm.cpp" />
+    <ClCompile Include="CanInstructDirectOtherGundan.cpp" />
+    <ClCompile Include="CastleConnectEdge.cpp" />
+    <ClCompile Include="CastleDefenceCoefOfNPC.cpp" />
+    <ClCompile Include="ChangeBGMTrackNum.cpp" />
+    <ClCompile Include="CheckAudioTypeCD.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CheckChangeYearDisp.cpp" />
+    <ClCompile Include="CnvHankakuZenakaku.cpp" />
+    <ClCompile Include="CommonGlobalHandle.cpp" />
+    <ClCompile Include="ControlPane.cpp" />
+    <ClCompile Include="ConvertCharCode.cpp" />
+    <ClCompile Include="CurProcessGameMemory.cpp" />
+    <ClCompile Include="CurProcessMemory.cpp" />
+    <ClCompile Include="CustomKahouTypeStr.cpp" />
+    <ClCompile Include="CWave.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CXAudio.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DarkModeTitleBarMod.cpp" />
+    <ClCompile Include="DDrawPatchOfHimeKao.cpp" />
+    <ClCompile Include="DeathFrequencyNotInfluenceLife.cpp" />
+    <ClCompile Include="DegreeLoyaltyOnCaptiveLibra.cpp" />
+    <ClCompile Include="DialogKahou.cpp" />
+    <ClCompile Include="DialogKahouMovie.cpp" />
+    <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="DijkstraCastle.cpp" />
+    <ClCompile Include="Dijkstra_draw.cpp" />
+    <ClCompile Include="Dijkstra_io.cpp" />
+    <ClCompile Include="Dijkstra_node.cpp" />
+    <ClCompile Include="EXBushou.cpp" />
+    <ClCompile Include="EXBushou_All.cpp" />
+    <ClCompile Include="EXBushou_LancelotTartare.cpp" />
+    <ClCompile Include="EXBushou_ShuiHidechiyo.cpp" />
+    <ClCompile Include="EXServiceBushouValueControll.cpp" />
+    <ClCompile Include="EXServiceCheckIncreaseSpecialProductByTheThing.cpp" />
+    <ClCompile Include="EXServiceCheckOtherDaimyosGetMoneyAndRise.cpp" />
+    <ClCompile Include="EXServiceExecuteAishoCalc.cpp" />
+    <ClCompile Include="EXServiceExecuteFilterMerits.cpp" />
+    <ClCompile Include="EXServiceExecuteIfAbilityIsUnderdeveloped.cpp" />
+    <ClCompile Include="EXServiceExecuteIfAutoUpExperience.cpp" />
+    <ClCompile Include="EXServiceExecuteIfBravesIsTheValue.cpp" />
+    <ClCompile Include="EXServiceExecuteIfCanAllAbilityInBattle.cpp" />
+    <ClCompile Include="EXServiceExecuteIfFixExperienceMax.cpp" />
+    <ClCompile Include="EXServiceExecuteIfLifesIsTheTimes.cpp" />
+    <ClCompile Include="EXServiceExecuteIfLifesIsTheValue.cpp" />
+    <ClCompile Include="EXServiceExecuteIfNoDutiesMaxIndependences.cpp" />
+    <ClCompile Include="EXServiceExecuteOnBushouSoldierChange.cpp" />
+    <ClCompile Include="EXServiceExecuteOnRegeneration.cpp" />
+    <ClCompile Include="EXServiceExecuteOnTurnChange.cpp" />
+    <ClCompile Include="EXServiceExecutePirateMakePort.cpp" />
+    <ClCompile Include="EXServiceExecuteRoninKunkouDecrement.cpp" />
+    <ClCompile Include="EXServiceExecuteTeppouSpMakeSmith.cpp" />
+    <ClCompile Include="EXServicePlayerDaimyoDataInfluenceOtherDaimyoData.cpp" />
+    <ClCompile Include="EXSuperService_IfYumiNoExists.cpp" />
+    <ClCompile Include="FactoryGeneralBushouName.cpp" />
+    <ClCompile Include="FactoryGeneralKaoFace.cpp" />
+    <ClCompile Include="FixExperienceDefault.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="FuncBattleUnitNumRepaint.cpp" />
+    <ClCompile Include="FuncBattleUnitStateRepaint.cpp" />
+    <ClCompile Include="FuncCamera.cpp" />
+    <ClCompile Include="FuncCanYusou.cpp" />
+    <ClCompile Include="FuncDoDeatchInBattle.cpp" />
+    <ClCompile Include="FuncDoDeatchInMain.cpp" />
+    <ClCompile Include="FuncDoTaikyaukInBattle.cpp" />
+    <ClCompile Include="FuncFadeInOut.cpp" />
+    <ClCompile Include="FuncFukidashiDialog.cpp" />
+    <ClCompile Include="FuncFukidashiDialogInBattle.cpp" />
+    <ClCompile Include="FuncGetGunshiBushouID.cpp" />
+    <ClCompile Include="FuncGundanCastleWindowRepaint.cpp" />
+    <ClCompile Include="FuncImageDialog.cpp" />
+    <ClCompile Include="FuncImagePngDialog.cpp" />
+    <ClCompile Include="FuncKaikenAI.cpp" />
+    <ClCompile Include="FuncMessageDialog.cpp" />
+    <ClCompile Include="FuncPlayBGM.cpp" />
+    <ClCompile Include="FuncPlayMovie.cpp" />
+    <ClCompile Include="FuncPlayResourceWav.cpp" />
+    <ClCompile Include="FuncSelectBushouDialog.cpp" />
+    <ClCompile Include="FuncSelectBushouMultiDialog.cpp" />
+    <ClCompile Include="FuncSelectCastleDialog.cpp" />
+    <ClCompile Include="FuncSelectDaimyoDialog.cpp" />
+    <ClCompile Include="FuncSelectGundanDialog.cpp" />
+    <ClCompile Include="FuncSelectKahouDialog.cpp" />
+    <ClCompile Include="FuncSelectKaniDialog.cpp" />
+    <ClCompile Include="FuncSelectMenuDialog.cpp" />
+    <ClCompile Include="FuncSetWeather.cpp" />
+    <ClCompile Include="FuncWarScrennRepaint.cpp" />
+    <ClCompile Include="GameDataStruct.cpp" />
+    <ClCompile Include="GeneralBushouBorn.cpp" />
+    <ClCompile Include="GeometryBoost.cpp" />
+    <ClCompile Include="GeometryMath.cpp" />
+    <ClCompile Include="GetFileName.cpp" />
+    <ClCompile Include="GetOSVersion.cpp" />
+    <ClCompile Include="GetProcessCount.cpp" />
+    <ClCompile Include="GetResolution.cpp" />
+    <ClCompile Include="GetSpecialFoldierPath.cpp" />
+    <ClCompile Include="GetTodouhukenWeather.cpp" />
+    <ClCompile Include="GetWarekiFromYMD.cpp" />
+    <ClCompile Include="GodPatch.cpp" />
+    <ClCompile Include="HexMapNB6.cpp" />
+    <ClCompile Include="HexRoleCollision.cpp" />
+    <ClCompile Include="HookBitBltCustom.cpp" />
+    <ClCompile Include="HookDefWindowProcACustom.cpp" />
+    <ClCompile Include="HookFunctions.cpp" />
+    <ClCompile Include="HookIntersectRectMessage.cpp" />
+    <ClCompile Include="HookInvalidateRectMessage.cpp" />
+    <ClCompile Include="HookMessageBoxACustom.cpp" />
+    <ClCompile Include="HookTextOutACustom.cpp" />
+    <ClCompile Include="HumanRelation.cpp" />
+    <ClCompile Include="IncreaseRatioCanDraftSoldier.cpp" />
+    <ClCompile Include="INMM.cpp" />
+    <ClCompile Include="InputDllToOtherProcess.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Json.cpp" />
+    <ClCompile Include="JudgeKahouDialogBigMove.cpp" />
+    <ClCompile Include="KahouN6P.cpp" />
+    <ClCompile Include="KamonDataAndPalette.cpp" />
+    <ClCompile Include="KaoSwapExtend.cpp" />
+    <ClCompile Include="KoeiLWDecorder.cpp" />
+    <ClCompile Include="KunkouIsNotResetOnRonin.cpp" />
+    <ClCompile Include="ls11_decode.cpp" />
+    <ClCompile Include="ls11_decodePack.cpp" />
+    <ClCompile Include="ls11_encode.cpp" />
+    <ClCompile Include="ls11_encodePack.cpp" />
+    <ClCompile Include="ls11_getFileData.cpp" />
+    <ClCompile Include="ls11_joinData.cpp" />
+    <ClCompile Include="ls11_outFileData.cpp" />
+    <ClCompile Include="ls11_splitData.cpp" />
+    <ClCompile Include="lua\lua_interface.cpp" />
+    <ClCompile Include="MakeIsseikougekiMembers.cpp" />
+    <ClCompile Include="MapData.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MessageInflection.cpp" />
+    <ClCompile Include="MessageInflectionEnding.cpp" />
+    <ClCompile Include="MessageInflectionSurfix.cpp" />
+    <ClCompile Include="MessageN6PPatch.cpp" />
+    <ClCompile Include="MovieBGMNonStopController.cpp" />
+    <ClCompile Include="MovieBlackBackController.cpp" />
+    <ClCompile Include="MovieMoveWindow.cpp" />
+    <ClCompile Include="nmh.c" />
+    <ClCompile Include="NoCompactDisk.cpp" />
+    <ClCompile Include="NonFaceBushouIndependences.cpp" />
+    <ClCompile Include="OnActionEndInBattle.cpp" />
+    <ClCompile Include="OnAdditionMoveRemainPower.cpp" />
+    <ClCompile Include="OnAfterChangeWindowSize.cpp" />
+    <ClCompile Include="OnAnsatsuAttackInBattle.cpp" />
+    <ClCompile Include="OnAptitudeKiba.cpp" />
+    <ClCompile Include="OnAptitudeTeppou.cpp" />
+    <ClCompile Include="OnAttackDistanceAddition.cpp" />
+    <ClCompile Include="OnBattleStartOfNPC.cpp" />
+    <ClCompile Include="OnBattleStartOfPlayer.cpp" />
+    <ClCompile Include="OnBushouAnsatsuInMain.cpp" />
+    <ClCompile Include="OnCallBackWindowProc.cpp" />
+    <ClCompile Include="OnCastleFallDown.cpp" />
+    <ClCompile Include="OnCastleTurnChange.cpp" />
+    <ClCompile Include="OnChangeGundanTurnInBattle.cpp" />
+    <ClCompile Include="OnChangeWeather.cpp" />
+    <ClCompile Include="OnCheckDiskSpace.cpp" />
+    <ClCompile Include="OnCheckRojoBushouNum.cpp" />
+    <ClCompile Include="OnCommerceBenzetsuJudge.cpp" />
+    <ClCompile Include="OnCommerceSuccessJudge.cpp" />
+    <ClCompile Include="OnCompareDeclineBat.cpp" />
+    <ClCompile Include="OnCompareDeclineGov.cpp" />
+    <ClCompile Include="OnCompareDeclineInt.cpp" />
+    <ClCompile Include="OnConfirmRatificationDialog.cpp" />
+    <ClCompile Include="OnCoreIntersectRect.cpp" />
+    <ClCompile Include="OnCurTekkousenFormCheck.cpp" />
+    <ClCompile Include="OnDaimyoAnsatsuMovieInMain.cpp" />
+    <ClCompile Include="OnDamagedOfAttack.cpp" />
+    <ClCompile Include="OnDamagedOfDoor.cpp" />
+    <ClCompile Include="OnDDrawWindowProcA.cpp" />
+    <ClCompile Include="OnDeathInBattle.cpp" />
+    <ClCompile Include="OnDecideMakeNewBushou.cpp" />
+    <ClCompile Include="OnDecideOfGeneralKaoFace.cpp" />
+    <ClCompile Include="OnDecrementTurnInBattle.cpp" />
+    <ClCompile Include="OnDetailKahouGraphicPush.cpp" />
+    <ClCompile Include="OnDetailKahouLayout.cpp" />
+    <ClCompile Include="OnDisitionScenarioIDOnSaveOrLoad.cpp" />
+    <ClCompile Include="OnDoumeiNegotiatePreviousBattle.cpp" />
+    <ClCompile Include="OnEditingButai.cpp" />
+    <ClCompile Include="OnEmperorManeuvers.cpp" />
+    <ClCompile Include="OnEndingAfterJumper.cpp" />
+    <ClCompile Include="OnEndingConditionTest.cpp" />
+    <ClCompile Include="OnEnteringDoEnding.cpp" />
+    <ClCompile Include="OnEnteringFromScenarioDaimyo.cpp" />
+    <ClCompile Include="OnEnterMainPlayerCommand.cpp" />
+    <ClCompile Include="OnEventsOfChangeSeasonTiming.cpp" />
+    <ClCompile Include="OnExecuteBattleAttackInBattle.cpp" />
+    <ClCompile Include="OnExecuteBattleCommandInBattle.cpp" />
+    <ClCompile Include="OnFaceNumberAccess.cpp" />
+    <ClCompile Include="OnFindTenshoukiDisk.cpp" />
+    <ClCompile Include="OnFireAttackSuccessInBattle.cpp" />
+    <ClCompile Include="OnFireTeppou.cpp" />
+    <ClCompile Include="OnFireTeppouSE.cpp" />
+    <ClCompile Include="OnFukidashiTypeB.cpp" />
+    <ClCompile Include="OnFukidashiTypeBFocusChange.cpp" />
+    <ClCompile Include="OnFunctionPointerTableJump.cpp" />
+    <ClCompile Include="OnGetDaimyoKoukeisyaBushouID.cpp" />
+    <ClCompile Include="OnGetGunshiBushouID.cpp" />
+    <ClCompile Include="OnGetPointerKaikenHeapMemory.cpp" />
+    <ClCompile Include="OnGlobalFreeMemoryInGameEnd.cpp" />
+    <ClCompile Include="OnGundanTurnChange.cpp" />
+    <ClCompile Include="OnGundantyoUragiriDokuritsu.cpp" />
+    <ClCompile Include="OnGungiDoing.cpp" />
+    <ClCompile Include="OnGungiFukidashi.cpp" />
+    <ClCompile Include="OnGunshiFukidashiMessage.cpp" />
+    <ClCompile Include="OnHirouFukidashi.cpp" />
+    <ClCompile Include="OnHirouSelectingBushouList.cpp" />
+    <ClCompile Include="OnigRegex.cpp" />
+    <ClCompile Include="oniguruma\ascii.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\big5.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\cp1251.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_jp.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_kr.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\euc_tw.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\gb18030.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_1.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_10.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_11.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_13.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_14.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_15.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_16.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_2.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_3.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_4.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_5.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_6.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_7.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_8.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\iso8859_9.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\koi8.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\koi8_r.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regcomp.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regenc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regerror.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regexec.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regext.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\reggnu.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regparse.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regposerr.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regposix.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regsyntax.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regtrav.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\regversion.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\sjis.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\st.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\unicode.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf16_be.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf16_le.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf32_be.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf32_le.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="oniguruma\utf8.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OnIketottariInBattle.cpp" />
+    <ClCompile Include="OnIncrementCastleTurnInBattle.cpp" />
+    <ClCompile Include="OnIncrementTaikiBushouCount.cpp" />
+    <ClCompile Include="OnInputNumberDialog.cpp" />
+    <ClCompile Include="OnJudgeCanAnyAttackDistance.cpp" />
+    <ClCompile Include="OnJudgeGungiDone.cpp" />
+    <ClCompile Include="OnJudgeHasTaihouPatch.cpp" />
+    <ClCompile Include="OnJudgeHimeHantei.cpp" />
+    <ClCompile Include="OnJudgeMainCommissionCancel.cpp" />
+    <ClCompile Include="OnJudgeResultKyohaku.cpp" />
+    <ClCompile Include="OnJudgeResultOfNPCNaiouInMain.cpp" />
+    <ClCompile Include="OnJudgeResultOfPCNaiouInMain.cpp" />
+    <ClCompile Include="OnJudgeTeppoutaiOrTeppouKiba.cpp" />
+    <ClCompile Include="OnJudgeWarCommissionCancel.cpp" />
+    <ClCompile Include="OnKeyEventHandler.cpp" />
+    <ClCompile Include="OnLeaveMainPlayerCommand.cpp" />
+    <ClCompile Include="OnLoadSaveDataInGame.cpp" />
+    <ClCompile Include="OnLoadSavevDataInOpening.cpp" />
+    <ClCompile Include="OnMainGameStart.cpp" />
+    <ClCompile Include="OnMainWindowCastleButton.cpp" />
+    <ClCompile Include="OnMessageBuildLastestWord.cpp" />
+    <ClCompile Include="OnMouseDriverIsInstalledInPC.cpp" />
+    <ClCompile Include="OnMouseEventHander.cpp" />
+    <ClCompile Include="OnMoveEndAnimationSetInBattle.cpp" />
+    <ClCompile Include="OnMoveEndJudgeInBattle.cpp" />
+    <ClCompile Include="OnMoveUnitAnimationChangeInBattle.cpp" />
+    <ClCompile Include="OnMovieWsprintfPush.cpp" />
+    <ClCompile Include="OnN6PAudioPlayTrack.cpp" />
+    <ClCompile Include="OnNenreiZoukaSyori.cpp" />
+    <ClCompile Include="OnNextTurnIsFieldOrCastle.cpp" />
+    <ClCompile Include="OnNPCSelectingAttackPostMoveAfterInBattle.cpp" />
+    <ClCompile Include="OnNPCSelectingAttackPostMoveInBattle.cpp" />
+    <ClCompile Include="OnNPCSelectingAttackPrevMoveInBattle.cpp" />
+    <ClCompile Include="OnPCSelectingAttackPostMoveInBattle.cpp" />
+    <ClCompile Include="OnPlayerGundanTurnEndInBattle.cpp" />
+    <ClCompile Include="OnPlayerTurnChange.cpp" />
+    <ClCompile Include="OnPostBattleTreatment.cpp" />
+    <ClCompile Include="OnPrevMainPlayerCommandWait.cpp" />
+    <ClCompile Include="OnPushSaveFileName.cpp" />
+    <ClCompile Include="OnPushSaveFileNameOfUnknown.cpp" />
+    <ClCompile Include="OnRainRangeJudge.cpp" />
+    <ClCompile Include="OnRareMessageWriteMemory.cpp" />
+    <ClCompile Include="OnResultOfNaiouInBattle.cpp" />
+    <ClCompile Include="OnSaveSaveDataInGame.cpp" />
+    <ClCompile Include="OnSeiiTaishougunConditionCastleNum.cpp" />
+    <ClCompile Include="OnSeiryokuInfoViewingInBattle.cpp" />
+    <ClCompile Include="OnSelectingAbilityInBattle.cpp" />
+    <ClCompile Include="OnSelectingAttackEventHandlerInBattle.cpp" />
+    <ClCompile Include="OnSelectingAttackInBattle.cpp" />
+    <ClCompile Include="OnSelectingKaikenBushou.cpp" />
+    <ClCompile Include="OnSelectingMainButaiHensyuUnitLongName.cpp" />
+    <ClCompile Include="OnSelectingOneBushouOfBushouList.cpp" />
+    <ClCompile Include="OnSelectingScenario.cpp" />
+    <ClCompile Include="OnSelectingScenarioDaimyo.cpp" />
+    <ClCompile Include="OnSelectingScenarioAfter.cpp" />
+    <ClCompile Include="OnSelectSaveOrLoadNo.cpp" />
+    <ClCompile Include="OnSelectWindowSize.cpp" />
+    <ClCompile Include="OnSendouDoneOnceJudgement.cpp" />
+    <ClCompile Include="OnSendouKonranAllMessage.cpp" />
+    <ClCompile Include="OnSendouKonranIsOneOrAll.cpp" />
+    <ClCompile Include="OnSendouKonranMultiKonran.cpp" />
+    <ClCompile Include="OnSendouSelectingWhich.cpp" />
+    <ClCompile Include="OnSetCanTaihouAndTekkousenDistance.cpp" />
+    <ClCompile Include="OnSettingMovePower.cpp" />
+    <ClCompile Include="OnSetTurnInBattle.cpp" />
+    <ClCompile Include="OnShowingIe.cpp" />
+    <ClCompile Include="OnShowingJotai.cpp" />
+    <ClCompile Include="OnShowingKahouDetail.cpp" />
+    <ClCompile Include="OnShowingMibun.cpp" />
+    <ClCompile Include="OnSobaChange.cpp" />
+    <ClCompile Include="OnSoldierDraftConditionInBattle.cpp" />
+    <ClCompile Include="OnSoldierDraftFilterInBattle.cpp" />
+    <ClCompile Include="OnSubstituteMaxSyutujinNum.cpp" />
+    <ClCompile Include="OnSuccessOrFailOfPostBattleTreatment.cpp" />
+    <ClCompile Include="OnSwitchMainScreenSubCommand.cpp" />
+    <ClCompile Include="OnTaihouAndTekkousenAttackTimesRewrite.cpp" />
+    <ClCompile Include="OnTaihouAttack.cpp" />
+    <ClCompile Include="OnTaihouAttackTimesRewrite.cpp" />
+    <ClCompile Include="OnTaikiAppearance.cpp" />
+    <ClCompile Include="OnTaikyakuCastleInstructions.cpp" />
+    <ClCompile Include="OnDefenceBushouHeisuuZero.cpp" />
+    <ClCompile Include="OnTaikyakuTryInBattle.cpp" />
+    <ClCompile Include="OnTenshouExeBattleStartExecute.cpp" />
+    <ClCompile Include="OnTeppouDeathInBattle.cpp" />
+    <ClCompile Include="OnTotsugekiResultTest.cpp" />
+    <ClCompile Include="OnUchitottariInBattle.cpp" />
+    <ClCompile Include="OnUIPaintOfMainScreeenBackGround.cpp" />
+    <ClCompile Include="OnUnitMoveEnd.cpp" />
+    <ClCompile Include="OnUpdateExperience.cpp" />
+    <ClCompile Include="OnUpdateGennekiKunkouParam.cpp" />
+    <ClCompile Include="OnUpdateHataageKunkouParam.cpp" />
+    <ClCompile Include="OnUpdateRoninKunkouParam.cpp" />
+    <ClCompile Include="OnUpdateRoninOfWarKunkouParam.cpp" />
+    <ClCompile Include="OnViewingBattleMenuInBattle.cpp" />
+    <ClCompile Include="OnViewingBushouDetailButaimei.cpp" />
+    <ClCompile Include="OnViewingBushouDetailKibaTeppou.cpp" />
+    <ClCompile Include="OnViewingBushouListKibaTeppou.cpp" />
+    <ClCompile Include="OnViewingBusyouRetsuden.cpp" />
+    <ClCompile Include="OnViewingCastleRetsuden.cpp" />
+    <ClCompile Include="OnViewingCastleRetsudenFunc.cpp" />
+    <ClCompile Include="OnViewingCommandMenuInBattle.cpp" />
+    <ClCompile Include="OnViewingEndLogo.cpp" />
+    <ClCompile Include="OnViewingHimeDetail.cpp" />
+    <ClCompile Include="OnViewingJobInBushouDetail.cpp" />
+    <ClCompile Include="OnViewingJobNoInBushouDetail.cpp" />
+    <ClCompile Include="OnViewingKahouDetail.cpp" />
+    <ClCompile Include="OnViewingKahouDetailKahouType.cpp" />
+    <ClCompile Include="OnViewingKahouList.cpp" />
+    <ClCompile Include="OnViewingKahouRetsuden.cpp" />
+    <ClCompile Include="OnViewingMainBushouListButaimei.cpp" />
+    <ClCompile Include="OnViewingNaiseiExecutantsEtc5NingumiDialog.cpp" />
+    <ClCompile Include="OnViewingNaiseiExecutantsEtc5NingumiWakuNum.cpp" />
+    <ClCompile Include="OnViewingScenarioTitleList.cpp" />
+    <ClCompile Include="OnViewingScreenMenu.cpp" />
+    <ClCompile Include="OnViewingTopMenu.cpp" />
+    <ClCompile Include="OnWarBGMCheck.cpp" />
+    <ClCompile Include="OnWritingScenarioDetail.cpp" />
+    <ClCompile Include="OnWsprintfOppositeIDAndStr.cpp" />
+    <ClCompile Include="OtherDaimyoNeverThreat.cpp" />
+    <ClCompile Include="OutputDebugImage.cpp" />
+    <ClCompile Include="OutputDebugStream.cpp" />
+    <ClCompile Include="OutputDebugString.cpp" />
+    <ClCompile Include="patchBugOfGundanYakusyokuInSenarioEditor.cpp" />
+    <ClCompile Include="PatchDDrawHimekaoAppearBug.cpp" />
+    <ClCompile Include="PatchDDrawWindowProcA.cpp" />
+    <ClCompile Include="PlayCDTrack.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PlayMP3Test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PluginMod.cpp" />
+    <ClCompile Include="ResolutionMobile.cpp" />
+    <ClCompile Include="ResolutionWide.cpp" />
+    <ClCompile Include="SaveDataStructEx.cpp" />
+    <ClCompile Include="SaveDataStructExFlag.cpp" />
+    <ClCompile Include="ScenarioMessageN6P.cpp" />
+    <ClCompile Include="ScenarioMod.cpp" />
+    <ClCompile Include="ScenarioTaikiBushouN6P.cpp" />
+    <ClCompile Include="SDKwavefile.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SDKXAudio.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SelectingBushouList.cpp" />
+    <ClCompile Include="SetBushouAvgParam.cpp" />
+    <ClCompile Include="SetExtensionMovie.cpp" />
+    <ClCompile Include="SetHelpFileName.cpp" />
+    <ClCompile Include="SetMyDamageOfDoor.cpp" />
+    <ClCompile Include="SetNeedKoudouryoku.cpp" />
+    <ClCompile Include="SetOverWriteButaiMei.cpp" />
+    <ClCompile Include="SndataN6PDataStruct.cpp" />
+    <ClCompile Include="SoundModServerCall.cpp" />
+    <ClCompile Include="SoundServer.cpp" />
+    <ClCompile Include="StrFormatMatch.cpp" />
+    <ClCompile Include="StrSplit.cpp" />
+    <ClCompile Include="TenShougiMod.cpp" />
+    <ClCompile Include="TenShougiModBegin.cpp" />
+    <ClCompile Include="TeppouDenraiEvent.cpp" />
+    <ClCompile Include="TimerMessageBox.cpp" />
+    <ClCompile Include="TimeStamp.cpp" />
+    <ClCompile Include="tinyxml2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmath.cpp" />
+    <ClCompile Include="ToCopyClipboard.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Todouhuken.cpp" />
+    <ClCompile Include="TSMod.cpp" />
+    <ClCompile Include="TSModCommand.cpp" />
+    <ClCompile Include="TSModDirectDrawCreate.cpp" />
+    <ClCompile Include="TSModDummy.cpp" />
+    <ClCompile Include="TSModPatchProcessMemory.cpp" />
+    <ClCompile Include="VariableNameRegistAndJudge.cpp" />
+    <ClCompile Include="ViewingBushouListTitle.cpp" />
+    <ClCompile Include="WaitTimeProcedure.cpp" />
+    <ClCompile Include="WinArgv.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="WorkToDieEverySeason.cpp" />
+    <ClCompile Include="WriteSoundMap.cpp" />
+    <ClCompile Include="X3DAudioSample.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="xmltest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2DDirectString.h" />
+    <ClInclude Include="2DPosition.h" />
+    <ClInclude Include="3DPosition.h" />
+    <ClInclude Include="AllocConsole.h" />
+    <CustomBuild Include="AntiDebug.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="Arabia2Kanji.h" />
+    <ClInclude Include="BFileN6P.h" />
+    <ClInclude Include="CnvHankakuZenkaku.h" />
+    <ClInclude Include="CommonGlobalHandle.h" />
+    <ClInclude Include="ConvertCharCode.h" />
+    <ClInclude Include="CurProcessGameMemory.h" />
+    <ClInclude Include="CurProcessMemory.h" />
+    <CustomBuild Include="CWave.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="CXAudio.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="DarkModeTitleBarMod.h" />
+    <ClInclude Include="DialogKahou.h" />
+    <ClInclude Include="DialogKahouMovie.h" />
+    <ClInclude Include="Dijkstra.h" />
+    <ClInclude Include="DijkstraCastle.h" />
+    <ClInclude Include="EXBushou.h" />
+    <ClInclude Include="EXBushou_All.h" />
+    <ClInclude Include="EXBushou_LancelotTartare.h" />
+    <ClInclude Include="EXBushou_ShuiHidechiyo.h" />
+    <ClInclude Include="EXServiceExecute.h" />
+    <ClInclude Include="FactoryGeneralBushouName.h" />
+    <ClInclude Include="FactoryGeneralKaoFace.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="FuncBattleUnitNumRepaint.h" />
+    <ClInclude Include="FuncBattleUnitStateRepaint.h" />
+    <ClInclude Include="FuncDoDeath.h" />
+    <ClInclude Include="FuncDoTaikyaku.h" />
+    <ClInclude Include="FuncFadeInOut.h" />
+    <ClInclude Include="FuncFukidashiDialog.h" />
+    <ClInclude Include="FuncFukidashiDialogInBattle.h" />
+    <ClInclude Include="FuncGetGunshiBushouID.h" />
+    <ClInclude Include="FuncGundanCastleWindowRepaint.h" />
+    <ClInclude Include="FuncImageDialog.h" />
+    <ClInclude Include="FuncImagePngDialog.h" />
+    <ClInclude Include="FuncMessageDialog.h" />
+    <ClInclude Include="FuncMoveCamera.h" />
+    <ClInclude Include="FuncPlayBGM.h" />
+    <ClInclude Include="FuncPlayMovie.h" />
+    <ClInclude Include="FuncPlayResourceWav.h" />
+    <ClInclude Include="FuncSelectBushouDialog.h" />
+    <ClInclude Include="FuncSelectBushouMultiDialog.h" />
+    <ClInclude Include="FuncSelectCastleDialog.h" />
+    <ClInclude Include="FuncSelectDaimyoDialog.h" />
+    <ClInclude Include="FuncSelectGundanDialog.h" />
+    <ClInclude Include="FuncSelectKahouDialog.h" />
+    <ClInclude Include="FuncSelectKaniDialog.h" />
+    <ClInclude Include="FuncSelectMenuDialog.h" />
+    <ClInclude Include="FuncSetWeather.h" />
+    <ClInclude Include="FuncWarScreenRepaint.h" />
+    <ClInclude Include="GameDataStruct.h" />
+    <ClInclude Include="GameDataStructBushou.h" />
+    <ClInclude Include="GameDataStructBattle.h" />
+    <ClInclude Include="GameDataStructCastle.h" />
+    <ClInclude Include="GameDataStructChimei.h" />
+    <ClInclude Include="GameDataStructMainCommand.h" />
+    <ClInclude Include="GameDataStructDaimyo.h" />
+    <ClInclude Include="GameDataStructGundan.h" />
+    <ClInclude Include="GameDataStructKahou.h" />
+    <ClInclude Include="GameDataStructKani.h" />
+    <ClInclude Include="GameDataStructMainTurn.h" />
+    <ClInclude Include="GameDataStructMaxmum.h" />
+    <ClInclude Include="GameDataStructTaikiBushou.h" />
+    <ClInclude Include="GameDataStructUI.h" />
+    <ClInclude Include="GameDataStructYakusyoku.h" />
+    <ClInclude Include="GeometryMath.h" />
+    <ClInclude Include="GetFileName.h" />
+    <ClInclude Include="GetOSVersion.h" />
+    <ClInclude Include="GetProcessCount.h" />
+    <ClInclude Include="GodPatch.h" />
+    <ClInclude Include="HexmapNB6.h" />
+    <ClInclude Include="HookBitBltCustom.h" />
+    <ClInclude Include="HookDefWindowProcACustom.h" />
+    <ClInclude Include="HookFunctions.h" />
+    <ClInclude Include="HookIntersectRectMessage.h" />
+    <ClInclude Include="HookInvalidateRectMessage.h" />
+    <ClInclude Include="HookMessageBoxACustom.h" />
+    <ClInclude Include="HookTextOutACustom.h" />
+    <ClInclude Include="HumanRelation.h" />
+    <ClInclude Include="inmm.h" />
+    <ClInclude Include="KahouN6P.h" />
+    <ClInclude Include="KahouType.h" />
+    <ClInclude Include="KaoSwapExtend.h" />
+    <ClInclude Include="KoeiLWDecode.h" />
+    <ClInclude Include="ls11_lib.h" />
+    <ClInclude Include="ls11_mod.h" />
+    <ClInclude Include="lua\lua_interface.h" />
+    <ClInclude Include="MakeIsseikougekiMembers.h" />
+    <ClInclude Include="MapData.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MessageInflection.h" />
+    <ClInclude Include="MessageInflectionEnding.h" />
+    <ClInclude Include="MessageInflectionSurfix.h" />
+    <ClInclude Include="MessageN6PPatch.h" />
+    <ClInclude Include="MessageN6PTemplate.h" />
+    <ClInclude Include="nmh.h" />
+    <ClInclude Include="NoCompactDisk.h" />
+    <ClInclude Include="OnChangeWeather.h" />
+    <ClInclude Include="OnEnterMainPlayerCommand.h" />
+    <ClInclude Include="OnFireAttackSuccessInBattle.h" />
+    <ClInclude Include="OnigRegex.h" />
+    <ClInclude Include="oniguruma\onigconfig.h" />
+    <ClInclude Include="oniguruma\oniggnu.h" />
+    <ClInclude Include="oniguruma\onigposix.h" />
+    <ClInclude Include="oniguruma\oniguruma.h" />
+    <ClInclude Include="oniguruma\regenc.h" />
+    <ClInclude Include="oniguruma\regint.h" />
+    <ClInclude Include="oniguruma\regparse.h" />
+    <ClInclude Include="oniguruma\st.h" />
+    <ClInclude Include="OnViewingBattleMenuInBattle.h" />
+    <CustomBuild Include="OutputDebugImage.h" />
+    <ClInclude Include="OutputDebugStream.h" />
+    <ClInclude Include="OutputDebugString.h" />
+    <CustomBuild Include="picojson.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="PluginMod.h" />
+    <ClInclude Include="ResolutionMobile.h" />
+    <ClInclude Include="ResolutionWide.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SaveDataStructEx.h" />
+    <ClInclude Include="ScenarioDataStruct.h" />
+    <ClInclude Include="ScenarioMessageN6PPatch.h" />
+    <ClInclude Include="ScenarioMod.h" />
+    <CustomBuild Include="SDKwavefile.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="SDKXAudio.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="SetBushouAvgParam.h" />
+    <ClInclude Include="SetExtensionMovie.h" />
+    <ClInclude Include="SetHelpFileName.h" />
+    <ClInclude Include="SetMyDamageOfDoor.h" />
+    <ClInclude Include="SetNeedKoudouryoku.h" />
+    <ClInclude Include="SetOverWriteButaiMei.h" />
+    <ClInclude Include="SndataN6PDataStruct.h" />
+    <CustomBuild Include="SoundServer.h" />
+    <ClInclude Include="StrFormatMatch.h" />
+    <ClInclude Include="TenShougiMod.h" />
+    <ClInclude Include="TimerMessageBox.h" />
+    <ClInclude Include="TimeStamp.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="tmath.h" />
+    <CustomBuild Include="ToCopyClipboard.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="Todouhuken.h" />
+    <ClInclude Include="TSMod.h" />
+    <ClInclude Include="TSModCommand.h" />
+    <ClInclude Include="TSModPatchProcessMemory.h" />
+    <CustomBuild Include="TString.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="VariableNameRegistAndJudge.h" />
+    <ClInclude Include="WaitTimeProcedure.h" />
+    <CustomBuild Include="WinArgv.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="WinTarget.h" />
+    <CustomBuild Include="WriteSoundMap.h" />
+    <CustomBuild Include="XAudioDbg.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SemiDebug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GeometryBoost.mht">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="GameDataStructSettings.h" />
+    <None Include="TSMod.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="bgmmm\BGMmm.lib" />
+    <Library Include="oniguruma\oniguruma.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="日本語文字コード判別.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TSMod.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

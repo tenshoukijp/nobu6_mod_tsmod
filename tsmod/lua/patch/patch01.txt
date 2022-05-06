@@ -1,0 +1,84 @@
+C/C++-style comments
+
+Allow the use of C-style (/*...*/) and C++-style (//...) comments in Lua source. Either or both styles can be enabled via #defines in llex.h or luaconf.h. Standard Lua comments remain available. 
+
+
+•Backwards compatible: yes 
+•Lines changed/added/deleted: -/39/- 
+•Lua authors' position: ? 
+•Author: criptych 
+•Last update: 2012-Jan-07 
+• [download (for Lua 5.2.0)] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+diff -burN lua-5.2.0/src/llex.c lua-5.2.0-mod/src/llex.c
+--- lua-5.2.0/src/llex.c	2011-11-30 07:43:51 -0500
++++ lua-5.2.0-mod/src/llex.c	2012-01-07 09:57:11 -0500
+@@ -415,6 +415,40 @@
+           next(ls);  /* skip until end of line (or end of file) */
+         break;
+       }
++
++      /* bn 01/2012: added C++-style comments */
++#if defined(LUA_CPPCOMT_SHORT) || defined(LUA_CPPCOMT_LONG)
++      case '/': {  /* '/' or '/''/' (line comment) or '/''*' (long comment) */
++        next(ls);
++#if defined(LUA_CPPCOMT_SHORT)
++        if (ls->current == '/') {
++          /* line comment */
++          next(ls);
++          while (!currIsNewline(ls) && ls->current != EOZ)
++            next(ls);  /* skip until end of line (or end of file) */
++        } else
++#endif /* LUA_CPPCOMT_SHORT */
++#if defined(LUA_CPPCOMT_LONG)
++        if (ls->current == '*') {
++          /* long comment */
++          next(ls);
++          int last = 0;
++          while (ls->current != EOZ) {
++            if (last == '*' && ls->current == '/') break;
++            last = ls->current;
++            next(ls);  /* skip until closing marker (or end of file) */
++          }
++          if (ls->current == EOZ)
++            lexerror(ls, "unfinished long comment", TK_EOS);
++          else next(ls);
++        } else
++#endif /* LUA_CPPCOMT_LONG */
++        return '/';
++        break;
++      }
++#endif /* LUA_CPPCOMT_SHORT || LUA_CPPCOMT_LONG */
++      /* end changes */
++
+       case '[': {  /* long string or simply '[' */
+         int sep = skip_sep(ls);
+         if (sep >= 0) {
+diff -burN lua-5.2.0/src/llex.h lua-5.2.0-mod/src/llex.h
+--- lua-5.2.0/src/llex.h	2011-11-30 07:43:51 -0500
++++ lua-5.2.0-mod/src/llex.h	2012-01-07 09:57:20 -0500
+@@ -15,6 +15,11 @@
+ 
+ 
+ 
++/* bn 01/2012: added C++-style comments */
++#define LUA_CPPCOMT_SHORT
++#define LUA_CPPCOMT_LONG
++/* end changes */
++
+ /*
+ * WARNING: if you change the order of this enumeration,
+ * grep "ORDER RESERVED"
