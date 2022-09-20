@@ -48,6 +48,7 @@ char szNoTaihouItems[][14] = {
 	"ŽF–€“›",
 	"ˆ¢”g“›",
 	"”nã“›",
+	"”nãh‹–“›",
 
 	// ˆÈ‰º‚Í‘å–C‚Å‚È‚­‰Ô“ü‚ê
 	"‘å“à“›",

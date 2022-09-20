@@ -53,8 +53,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,8,1,7
- PRODUCTVERSION 2,8,1,7
+ FILEVERSION 2,8,1,8
+ PRODUCTVERSION 2,8,1,8
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -71,12 +71,12 @@ BEGIN
         BEGIN
 			VALUE "Comments", "天翔記 TSMod改造用･基盤MOD"
             VALUE "FileDescription", "天翔記 TSMod改造用･基盤MOD"
-            VALUE "FileVersion", "2.8.1.7"
+            VALUE "FileVersion", "2.8.1.8"
             VALUE "InternalName", "TSMod"
             VALUE "LegalCopyright", "Copyright (C) 2022 天翔記.jp"
             VALUE "OriginalFilename", "TSMod.dll"
             VALUE "ProductName", "天翔記 TSMod改造用･基盤MOD"
-            VALUE "ProductVersion", "2.8.1.7"
+            VALUE "ProductVersion", "2.8.1.8"
         END
     END
     BLOCK "VarFileInfo"
