@@ -38,7 +38,7 @@
 extern HINSTANCE hDDrawMod;
 
 void OnDrawKaoFullColorFileNameExecute() {
-	OutputDebugString("ŠçƒOƒ‰Œˆ’èŽž");
+	// OutputDebugString("ŠçƒOƒ‰Œˆ’èŽž");
 	int nFileNameAddress = (int)hDDrawMod + DDRAW_DLL_FILENAME_ADDRESS_RELATIVE;
 	char *szFileName = (char *)nFileNameAddress;
 	char overrideFileNameBuffer[100] = "";
