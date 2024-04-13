@@ -215,7 +215,9 @@ extern PFNSNONVIEWINGMEIBUTSUJITEN p_snOnViewingMeibutsuJiten;
 typedef bool (WINAPI *PFNSNONVIEWINGMEIJOMONOGATARI)(int iCastleID, char *szRetsudenTitle, char *szRetsudenDetail);
 extern PFNSNONVIEWINGMEIJOMONOGATARI p_snOnViewingMeijoMonogatari;
 
-
+// p_snOnRequestFullcolorFaceFileName
+typedef bool (WINAPI *PFNSNONREQUESTFACEFULLCOLORFACEFILENAME)(char* szOrgFileNameBuffer, char *szDstFileNameBuffer);
+extern PFNSNONREQUESTFACEFULLCOLORFACEFILENAME p_snOnRequestFullcolorFaceFileName;
 
 // p_snOnSelectingBattleAction
 typedef int (WINAPI *PFNSNONSELECTINGBATTLEACTION)(int iBushouID, int iTargetID, int iSelectingActionID, void *pOtherInfo);

@@ -59,6 +59,7 @@ extern void InitKunkouIsNotResetOnRonin();
 extern void SetChangeBGMTrackNum();
 extern void patchDisableDDrawResizeFunction();
 extern void patchDisableDDrawHimeWrongAppearBug();
+extern void WriteDDrawDrawKaoFullColorFileName();
 extern void SetUnviewingEndingLogo();
 extern int setHexMapNB6ToHexMapArray();
 extern void setNoCaptionAndMenuBarBefore();
@@ -1091,6 +1092,9 @@ void d_DirectDrawCreateExecute() {
 
 		// フリー姫が男性の顔で誤爆で出現するのを極力抑える(極力しか抑えられない)
 		patchDisableDDrawHimeWrongAppearBug();
+
+		// 顔グラのファイル名決定時に呼ばれる
+		WriteDDrawDrawKaoFullColorFileName();
 
 		// KaoSwapが拡張されてるかチェックし、拡張されていたら、挙動を変える。
 		checkKaoSwapExtend();

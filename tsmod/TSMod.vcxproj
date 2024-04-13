@@ -518,6 +518,7 @@
     <ClCompile Include="OnDaimyoAnsatsuMovieInMain.cpp" />
     <ClCompile Include="OnDamagedOfAttack.cpp" />
     <ClCompile Include="OnDamagedOfDoor.cpp" />
+    <ClCompile Include="OnDDrawFullcolorFileName.cpp" />
     <ClCompile Include="OnDDrawWindowProcA.cpp" />
     <ClCompile Include="OnDeathInBattle.cpp" />
     <ClCompile Include="OnDecideMakeNewBushou.cpp" />

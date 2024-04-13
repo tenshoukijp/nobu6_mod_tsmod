@@ -2172,6 +2172,9 @@
     <ClCompile Include="DarkModeTitleBarMod.cpp">
       <Filter>05.ソース\D1.DDrawフック</Filter>
     </ClCompile>
+    <ClCompile Include="OnDDrawFullcolorFileName.cpp">
+      <Filter>05.ソース\D1.DDrawフック</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MessageN6PTemplate.h">

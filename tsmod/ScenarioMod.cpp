@@ -106,6 +106,8 @@ PFNSNONVIEWINGMEIBUTSUJITEN p_snOnViewingMeibutsuJiten;
 // p_snOnViewingMeijoMonogatari
 PFNSNONVIEWINGMEIJOMONOGATARI p_snOnViewingMeijoMonogatari;
 
+// p_snOnRequestFaceFileName
+PFNSNONREQUESTFACEFULLCOLORFACEFILENAME p_snOnRequestFullcolorFaceFileName;
 
 // p_snOnSelectingBattleAction
 PFNSNONSELECTINGBATTLEACTION p_snOnSelectingBattleAction;
@@ -288,6 +290,9 @@ BOOL LoadLibraryOfScenarioMod() {
 
 		// 城列伝のタイトルの表示時
 		p_snOnViewingMeijoMonogatari = (PFNSNONVIEWINGMEIJOMONOGATARI)GetProcAddress( h_scenario, "snOnViewingMeijoMonogatari" );
+
+		// フルカラー画像の顔グラのファイル名が要求された時
+		p_snOnRequestFullcolorFaceFileName = (PFNSNONREQUESTFACEFULLCOLORFACEFILENAME)GetProcAddress( h_scenario, "snOnRequestFullcolorFaceFileName" );
 
 		// 対象武将の兵数の最大数を要求された時
 		p_snOnRequestSoldierMax = (PFNSNONREQUESTSOLDIERMAX)GetProcAddress( h_scenario, "snOnRequestSoldierMax" );
