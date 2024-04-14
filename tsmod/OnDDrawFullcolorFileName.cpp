@@ -1,9 +1,12 @@
 #include "WinTarget.h"
 
+#include <shlwapi.h>
 #include "CommonGlobalHandle.h"
 #include "GameDataStruct.h"
 #include "TSMod.h"
 #include "ScenarioMod.h"
+
+#pragma comment(lib, "shlwapi.lib")
 
 /*
 79A32533   6A 40            PUSH 40
@@ -41,9 +44,9 @@ void OnDrawKaoFullColorFileNameExecute() {
 	// OutputDebugString("顔グラ決定時");
 	int nFileNameAddress = (int)hDDrawMod + DDRAW_DLL_FILENAME_ADDRESS_RELATIVE;
 	char *szFileName = (char *)nFileNameAddress;
-	char overrideFileNameBuffer[100] = "";
+	char overrideFileNameBuffer[MAX_PATH] = "";
 	if (p_snOnRequestFullcolorFaceFileName) {
-		char szLowerFileName[256] = "";
+		char szLowerFileName[MAX_PATH] = "";
 		strcpy(szLowerFileName, szFileName);
 		_strlwr(szLowerFileName);
 
@@ -51,8 +54,10 @@ void OnDrawKaoFullColorFileNameExecute() {
 
 		// 有効な文字が入っていたら、コピー
 		if (strlen(overrideFileNameBuffer)) {
-			strncpy(szFileName, overrideFileNameBuffer, 98);
-			szFileName[99] = '\0';
+			if (PathFileExists(overrideFileNameBuffer)) {
+				strncpy(szFileName, overrideFileNameBuffer, 98);
+				szFileName[99] = '\0';
+			}
 		}
 	}
 
