@@ -108,7 +108,7 @@ char cmdOnDDrawJumpFromwKaoFullColorFileName[6] = "\xE9";
 
 // ニーモニック書き換え用
 void WriteDDrawDrawKaoFullColorFileName() {
-	pDDrawJumpFromToOnDrawKaoFullColorFileName = (int)hDDrawMod + DDRAW_DLL_ENTRYPOINT_TO_PUSH_80000000; // DDrawの先頭から、// DDrawの先頭から、上記の「5BE724D4   68 00100000      PUSH    1000」の先頭相当するアドレス
+	pDDrawJumpFromToOnDrawKaoFullColorFileName = (int)hDDrawMod + DDRAW_DLL_ENTRYPOINT_TO_PUSH_80000000; // DDrawの先頭から、上記の「79A32578   68 00000080      PUSH 80000000」の先頭相当するアドレス
 	pDDrawReturnLblFromOnDrawKaoFullColorFileName = pDDrawJumpFromToOnDrawKaoFullColorFileName + 5; // １行分の命令の次の場所が返る場所
 
 	// まずアドレスを数字として扱う
